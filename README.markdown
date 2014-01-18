@@ -39,12 +39,12 @@ rake deploy
 
 
 ##Где брать знания?
+* http://www.tomordonez.com/blog/2012/06/04/creating-a-github-blog-using-octopress/
 
 * http://ajaxblog.ru/octopress/octopress-blogging-for-geeks/
 * http://maxmikheev.ru/blog/2012/07/10/install-octopress-on-mac-os/
 * http://kvz.io/blog/2012/09/25/blog-with-octopress/
 * http://schuyler.info/blog/how-to-setup-a-new-octopress-blog-on-github-pages.html
-* http://www.tomordonez.com/blog/2012/06/04/creating-a-github-blog-using-octopress/
 * http://paulsturgess.co.uk/blog/2013/04/24/hello-octopress-and-github-pages/
 * http://everythingisgray.com/2013/06/15/on-migrating-from-wordpress-to-octopress
 
