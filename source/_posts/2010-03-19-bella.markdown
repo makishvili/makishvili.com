@@ -1,0 +1,15 @@
+---
+author: admin
+comments: true
+date: 2010-03-19 12:26:05+00:00
+layout: post
+slug: bella
+title: Bella (фильм Алехандро Монтеверде)
+wordpress_id: 1397
+categories:
+- О жизни
+---
+
+Одного кадра достаточно, чтобы захотеть посмотреть фильм целиком.
+![](http://www.equipbiz.co.nz/blog/pictures/bella-wallpaper.jpg)
+
