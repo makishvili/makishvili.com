@@ -1,5 +1,5 @@
 ---
-author: admin
+author: makishvili
 comments: true
 date: 2008-12-04 18:12:18+00:00
 layout: post
