@@ -1,6 +1,6 @@
 readify.get:
 	rm -rf .themes/readify;
-	git clone git://github.com/vladigleba/readify.git .themes/readify;
+	git clone git://github.com/makishvili/readify.git .themes/readify;
 
 readify.set:
 	rake install['readify'];
