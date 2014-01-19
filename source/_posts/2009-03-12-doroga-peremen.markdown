@@ -7,7 +7,7 @@ slug: doroga-peremen
 title: Дорога перемен
 wordpress_id: 413
 categories:
-- О жизни
+- life
 tags:
 - Кино
 - Семья

@@ -7,8 +7,8 @@ slug: bumazhnyj-bloknotik
 title: Бумажный блокнотик
 wordpress_id: 1160
 categories:
-- О жизни
-- О технологиях
+- life
+- tech
 tags:
 - Наблюдения
 ---

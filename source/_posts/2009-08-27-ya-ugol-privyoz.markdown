@@ -7,7 +7,7 @@ slug: ya-ugol-privyoz
 title: Я уголь привёз
 wordpress_id: 1115
 categories:
-- О жизни
+- life
 tags:
 - Наблюдения
 - Шутка

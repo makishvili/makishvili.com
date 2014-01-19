@@ -7,7 +7,7 @@ slug: conditional-comments
 title: Conditional Comments
 wordpress_id: 304
 categories:
-- О технологиях
+- tech
 tags:
 - HTML
 - Рекомендации

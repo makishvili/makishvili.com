@@ -7,7 +7,7 @@ slug: slide-bezuslovnoe-doverie
 title: 'Слайд-шоу: Безусловное доверие'
 wordpress_id: 1120
 categories:
-- О жизни
+- life
 tags:
 - Дети
 - Доверие

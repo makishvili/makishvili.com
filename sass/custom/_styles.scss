@@ -504,7 +504,7 @@ article {
       }
     }
     
-    p.meta { 
+    p.meta {
       @extend .font-size-medium;
       @extend .sans-serif-font;
       color: $secondary-text-color;

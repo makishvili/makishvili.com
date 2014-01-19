@@ -7,7 +7,7 @@ slug: banalnost
 title: Банальность
 wordpress_id: 1162
 categories:
-- О жизни
+- life
 tags:
 - Качество жизни
 - Наблюдения

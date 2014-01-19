@@ -7,7 +7,7 @@ slug: stepan-reznikov-pravilnye-ssylki
 title: 'Степан Резников: Правильные ссылки'
 wordpress_id: 967
 categories:
-- О технологиях
+- tech
 tags:
 - HTML
 ---

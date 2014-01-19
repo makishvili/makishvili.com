@@ -7,7 +7,7 @@ slug: ie-81-eagle-eyes
 title: IE 8.1 Eagle Eyes
 wordpress_id: 614
 categories:
-- О технологиях
+- tech
 tags:
 - IE
 ---

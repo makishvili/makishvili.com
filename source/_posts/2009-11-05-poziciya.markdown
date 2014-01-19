@@ -7,7 +7,7 @@ slug: poziciya
 title: Позиция
 wordpress_id: 1153
 categories:
-- О жизни
+- life
 ---
 
 Прекрасный образец отстаивания своей позиции.

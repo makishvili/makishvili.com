@@ -7,7 +7,7 @@ slug: burning-room
 title: Burning Room
 wordpress_id: 1418
 categories:
-- О жизни
+- life
 tags:
 - Танец
 ---

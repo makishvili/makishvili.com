@@ -7,7 +7,7 @@ slug: duane-hopwood-mne-nuzhen-smysl-vy-ponimaete
 title: 'Duane Hopwood: "Мне нужен Смысл. Вы понимаете?"'
 wordpress_id: 99
 categories:
-- О жизни
+- life
 tags:
 - Кино
 - Наблюдения

@@ -7,7 +7,7 @@ slug: moskva-sportivnaya
 title: Москва спортивная
 wordpress_id: 685
 categories:
-- О жизни
+- life
 tags:
 - Москва
 ---

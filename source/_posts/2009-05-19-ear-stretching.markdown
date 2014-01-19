@@ -7,7 +7,7 @@ slug: ear-stretching
 title: Ear stretching
 wordpress_id: 852
 categories:
-- О жизни
+- life
 tags:
 - Наблюдения
 ---

@@ -7,7 +7,7 @@ slug: kush
 title: '"Сандалики на тонком ремешке". Рассказ'
 wordpress_id: 1575
 categories:
-- О жизни
+- life
 tags:
 - моя проза
 ---

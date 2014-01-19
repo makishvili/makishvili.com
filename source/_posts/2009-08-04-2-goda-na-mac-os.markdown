@@ -7,7 +7,7 @@ slug: 2-goda-na-mac-os
 title: 2 года на Mac OS
 wordpress_id: 1071
 categories:
-- О технологиях
+- tech
 tags:
 - Mac OS X
 ---

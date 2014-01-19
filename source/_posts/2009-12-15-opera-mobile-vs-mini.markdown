@@ -7,7 +7,7 @@ slug: opera-mobile-vs-mini
 title: Opera Mobile vs Mini
 wordpress_id: 1340
 categories:
-- О технологиях
+- tech
 tags:
 - Opera
 ---

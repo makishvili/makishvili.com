@@ -7,7 +7,7 @@ slug: openid
 title: OpenId
 wordpress_id: 61
 categories:
-- О технологиях
+- tech
 tags:
 - Блог
 ---

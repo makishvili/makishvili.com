@@ -7,7 +7,7 @@ slug: vadim-makeev
 title: Портреты. Вадим "Pepelsbey" Макеев
 wordpress_id: 721
 categories:
-- О жизни
+- life
 tags:
 - Значимые Личности
 - Наблюдения

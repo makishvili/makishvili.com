@@ -7,7 +7,7 @@ slug: validation
 title: Validation
 wordpress_id: 1195
 categories:
-- О жизни
+- life
 tags:
 - Качество жизни
 - Психология

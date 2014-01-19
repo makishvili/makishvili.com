@@ -7,7 +7,7 @@ slug: molchalivaya-moskva
 title: Молчаливая Москва
 wordpress_id: 1588
 categories:
-- О жизни
+- life
 tags:
 - Качество жизни
 - Москва

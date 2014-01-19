@@ -7,8 +7,8 @@ slug: trackback
 title: Trackback
 wordpress_id: 42
 categories:
-- О жизни
-- О технологиях
+- life
+- tech
 tags:
 - Блог
 ---

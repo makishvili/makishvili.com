@@ -7,8 +7,8 @@ slug: nachalo
 title: Начало
 wordpress_id: 17
 categories:
-- О жизни
-- О технологиях
+- life
+- tech
 tags:
 - Блог
 ---

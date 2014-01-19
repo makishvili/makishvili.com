@@ -7,7 +7,7 @@ slug: intellijidea-maia
 title: Немного прекрасного об IntelliJIDEA Maia
 wordpress_id: 995
 categories:
-- О технологиях
+- tech
 tags:
 - IntelliJIDEA
 - Javascript

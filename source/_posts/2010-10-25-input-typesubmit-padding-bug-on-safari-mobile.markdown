@@ -7,7 +7,7 @@ slug: input-typesubmit-padding-bug-on-safari-mobile
 title: Неуправляемый паддинг  внутри input
 wordpress_id: 1445
 categories:
-- О технологиях
+- tech
 tags:
 - Safari
 ---

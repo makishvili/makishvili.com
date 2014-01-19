@@ -7,7 +7,7 @@ slug: esli-tebe-grustno
 title: Если тебе грустно
 wordpress_id: 32
 categories:
-- О жизни
+- life
 tags:
 - Наблюдения
 ---

@@ -7,7 +7,7 @@ slug: inache
 title: Иначе
 wordpress_id: 1441
 categories:
-- О жизни
+- life
 tags:
 - музыка
 ---

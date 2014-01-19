@@ -7,7 +7,7 @@ slug: free-private-svn
 title: 'Павел: Free Private SVN'
 wordpress_id: 1067
 categories:
-- О технологиях
+- tech
 tags:
 - SVN
 ---

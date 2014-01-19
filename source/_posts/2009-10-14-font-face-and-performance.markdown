@@ -7,7 +7,7 @@ slug: font-face-and-performance
 title: 'Steve Souders: @font-face and performance'
 wordpress_id: 1202
 categories:
-- О технологиях
+- tech
 tags:
 - Font
 - СSS

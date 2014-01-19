@@ -7,7 +7,7 @@ slug: ivan-spasibo
 title: Иван, спасибо
 wordpress_id: 71
 categories:
-- О технологиях
+- tech
 tags:
 - HTML
 - XML

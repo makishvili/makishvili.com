@@ -7,7 +7,7 @@ slug: verstka-v-intellijidea-2
 title: Вёрстка в IntelliJIDEA. Часть №2
 wordpress_id: 183
 categories:
-- О технологиях
+- tech
 tags:
 - HTML
 - IntelliJIDEA

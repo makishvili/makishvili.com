@@ -48,6 +48,7 @@ rake deploy
 * http://paulsturgess.co.uk/blog/2013/04/24/hello-octopress-and-github-pages/
 * http://everythingisgray.com/2013/06/15/on-migrating-from-wordpress-to-octopress
 
+* [Категории в отдельную страницу](http://highaltitudehacks.com/2013/06/30/octopress-category-pages-with-preview-and-pagination/)
 ## Плагины:
 * [Youtube.rb](https://gist.github.com/joelverhagen/1805814)
 

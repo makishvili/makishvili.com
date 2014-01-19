@@ -7,7 +7,7 @@ slug: pyotr-mamonov-u-lyubvi-est-odin-glagol-otdavat
 title: 'Пётр Мамонов: "У любви есть один глагол — отдавать"'
 wordpress_id: 1283
 categories:
-- О жизни
+- life
 ---
 
 По поводу премьеры фильма «Царь» Пётр Мамонов дал интервью газете «Труд»    

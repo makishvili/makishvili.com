@@ -7,7 +7,7 @@ slug: signs
 title: '"Знаки". Рассказ'
 wordpress_id: 1598
 categories:
-- О жизни
+- life
 tags:
 - моя проза
 ---

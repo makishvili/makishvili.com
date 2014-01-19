@@ -7,7 +7,7 @@ slug: stilizaciya-rebenka-ssylki-pri-hover
 title: Стилизация ребенка ссылки при :hover
 wordpress_id: 1007
 categories:
-- О технологиях
+- tech
 tags:
 - IE
 - СSS

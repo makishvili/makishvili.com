@@ -7,7 +7,7 @@ slug: writing-a-novel
 title: Nigel Watts "Writing a Novel"
 wordpress_id: 1426
 categories:
-- О жизни
+- life
 tags:
 - Книги
 - Литературное мастерство

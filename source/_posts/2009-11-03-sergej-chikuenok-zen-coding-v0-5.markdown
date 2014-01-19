@@ -7,7 +7,7 @@ slug: sergej-chikuenok-zen-coding-v0-5
 title: Сергей Чикуенок. Zen Coding v0.5
 wordpress_id: 1257
 categories:
-- О технологиях
+- tech
 tags:
 - HTML
 - Javascript

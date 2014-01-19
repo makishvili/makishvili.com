@@ -7,7 +7,7 @@ slug: revolutionary-road
 title: Revolutionary Road
 wordpress_id: 431
 categories:
-- О жизни
+- life
 tags:
 - Кино
 - Наблюдения

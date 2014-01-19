@@ -7,7 +7,7 @@ slug: chetyre-lozhki
 title: Четыре ложки
 wordpress_id: 1156
 categories:
-- О жизни
+- life
 tags:
 - Катя
 - Наблюдения

@@ -7,7 +7,7 @@ slug: vsegda-kak-sejchas
 title: Всегда — как сейчас
 wordpress_id: 1435
 categories:
-- О жизни
+- life
 tags:
 - Катя
 - Психология

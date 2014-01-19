@@ -7,7 +7,7 @@ slug: priroda-civilizovannosti
 title: Природа цивилизованности
 wordpress_id: 1170
 categories:
-- О жизни
+- life
 tags:
 - Качество жизни
 - Наблюдения

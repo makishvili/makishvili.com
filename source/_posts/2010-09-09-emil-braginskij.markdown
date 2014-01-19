@@ -7,7 +7,7 @@ slug: emil-braginskij
 title: Эмиль Брагинский
 wordpress_id: 1439
 categories:
-- О жизни
+- life
 tags:
 - Книги
 - Литературное мастерство

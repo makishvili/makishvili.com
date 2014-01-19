@@ -7,7 +7,7 @@ slug: it-is-cold
 title: '"Холодно". Повесть'
 wordpress_id: 1503
 categories:
-- О жизни
+- life
 tags:
 - Книги
 - Литературное мастерство

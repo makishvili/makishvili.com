@@ -7,7 +7,7 @@ slug: plusodin
 title: Плюсадин
 wordpress_id: 74
 categories:
-- О жизни
+- life
 ---
 
 Найдено [Алексеем](http://secondiary.ru/index.php/articles/1170) у [![[info]](http://stat.livejournal.com/img/userinfo.gif)](http://www.livejournal.com/users/kee_ta/info)[kee_ta](http://users.livejournal.com/kee_ta)

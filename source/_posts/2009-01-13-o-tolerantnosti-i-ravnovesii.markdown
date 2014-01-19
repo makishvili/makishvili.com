@@ -7,7 +7,7 @@ slug: o-tolerantnosti-i-ravnovesii
 title: О толерантности и равновесии
 wordpress_id: 112
 categories:
-- О жизни
+- life
 tags:
 - Наблюдения
 ---

@@ -7,8 +7,8 @@ slug: fidy
 title: Фиды
 wordpress_id: 394
 categories:
-- О жизни
-- О технологиях
+- life
+- tech
 tags:
 - Блог
 ---

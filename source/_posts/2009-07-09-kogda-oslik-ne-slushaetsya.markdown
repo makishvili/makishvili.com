@@ -7,7 +7,7 @@ slug: kogda-oslik-ne-slushaetsya
 title: Когда ослик не слушается
 wordpress_id: 1038
 categories:
-- О жизни
+- life
 tags:
 - Катя
 - Психология

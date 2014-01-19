@@ -7,7 +7,7 @@ slug: lib-rus-ec-prikazal-dolgo-zhit
 title: lib.rus.ec приказал долго жить
 wordpress_id: 1183
 categories:
-- О жизни
+- life
 tags:
 - Книги
 ---

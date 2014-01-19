@@ -7,7 +7,7 @@ slug: odezhda-vliyaet-na-kachestvo-zhizni
 title: Одежда влияет на качество жизни
 wordpress_id: 1027
 categories:
-- О жизни
+- life
 tags:
 - Катя
 - Качество жизни

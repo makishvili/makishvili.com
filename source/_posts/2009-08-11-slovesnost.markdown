@@ -7,7 +7,7 @@ slug: slovesnost
 title: Словесность, как основа образования
 wordpress_id: 1074
 categories:
-- О жизни
+- life
 tags:
 - Наблюдения
 - Образование

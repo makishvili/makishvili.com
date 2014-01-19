@@ -7,7 +7,7 @@ slug: yarkost
 title: Уменьшаем минимальную яркость экрана
 wordpress_id: 227
 categories:
-- О технологиях
+- tech
 tags:
 - Mac OS X
 ---

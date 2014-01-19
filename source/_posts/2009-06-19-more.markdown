@@ -7,7 +7,7 @@ slug: more
 title: Море
 wordpress_id: 1025
 categories:
-- О жизни
+- life
 ---
 
 Мы уехали на море :)

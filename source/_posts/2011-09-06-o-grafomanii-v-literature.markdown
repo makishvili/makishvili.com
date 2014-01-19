@@ -7,7 +7,7 @@ slug: o-grafomanii-v-literature
 title: О графомании в психиатрии и литературе
 wordpress_id: 1605
 categories:
-- О жизни
+- life
 tags:
 - Литературное мастерство
 ---

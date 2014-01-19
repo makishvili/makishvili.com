@@ -7,7 +7,7 @@ slug: subbotnik-svershilsya
 title: Субботник свершился
 wordpress_id: 127
 categories:
-- О жизни
+- life
 ---
 
 Субботник свершился. Выступления окончены.

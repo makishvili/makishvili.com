@@ -7,9 +7,9 @@ slug: errare
 title: Ошибка. Осознание, анализ, извлечение пользы
 wordpress_id: 1475
 categories:
-- О жизни
-- О технологиях
-- Доклады
+- life
+- tech
+- presentation
 tags:
 - HTML
 - Качество жизни

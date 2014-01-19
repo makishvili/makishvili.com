@@ -7,7 +7,7 @@ slug: idea-settings-webide
 title: IntelliJIDEA → settings → WebIDE
 wordpress_id: 1102
 categories:
-- О технологиях
+- tech
 tags:
 - IntelliJIDEA
 - WebIDE

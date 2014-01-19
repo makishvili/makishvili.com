@@ -7,7 +7,7 @@ slug: webide-eap
 title: JetBrains Web Developer IDE EAP
 wordpress_id: 1087
 categories:
-- О технологиях
+- tech
 tags:
 - IntelliJIDEA
 ---

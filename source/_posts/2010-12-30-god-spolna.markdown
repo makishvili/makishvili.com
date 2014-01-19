@@ -7,7 +7,7 @@ slug: god-spolna
 title: Год сполна
 wordpress_id: 1471
 categories:
-- О жизни
+- life
 tags:
 - Качество жизни
 - Кино

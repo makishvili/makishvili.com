@@ -7,7 +7,7 @@ slug: din-dinamyte-nevill-prostranstva-imyon-v-xml
 title: 'Дин DinamytE Невилль: Пространства имён в XML'
 wordpress_id: 119
 categories:
-- О технологиях
+- tech
 tags:
 - XML
 - Рекомендации

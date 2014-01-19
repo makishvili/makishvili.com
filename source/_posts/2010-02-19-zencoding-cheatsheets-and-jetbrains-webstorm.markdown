@@ -7,7 +7,7 @@ slug: zencoding-cheatsheets-and-jetbrains-webstorm
 title: ZenCoding CheatSheets and JetBrains WebStorm
 wordpress_id: 1362
 categories:
-- О технологиях
+- tech
 tags:
 - IntelliJIDEA
 - WebIDE

@@ -7,7 +7,7 @@ slug: yasubbotnik-v-kieve
 title: Я.Субботник в Киеве
 wordpress_id: 597
 categories:
-- О технологиях
+- tech
 ---
 
 25 апреля состоится Я.Субботник "Вёрстка и API" в Киеве.

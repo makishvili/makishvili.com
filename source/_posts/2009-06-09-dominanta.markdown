@@ -7,7 +7,7 @@ slug: dominanta
 title: Многозадачности нет. Есть Доминанта
 wordpress_id: 982
 categories:
-- О жизни
+- life
 tags:
 - Добавить метку
 - Наблюдения

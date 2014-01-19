@@ -7,7 +7,7 @@ slug: oskar-i-rozovaya-dama
 title: Оскар и Розовая Дама
 wordpress_id: 1286
 categories:
-- О жизни
+- life
 tags:
 - Театр
 ---

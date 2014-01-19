@@ -7,7 +7,7 @@ slug: vechernyaya-zastolnaya
 title: Вечерняя застольная
 wordpress_id: 1649
 categories:
-- О жизни
+- life
 ---
 
 

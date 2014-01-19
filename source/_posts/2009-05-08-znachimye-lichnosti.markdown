@@ -7,7 +7,7 @@ slug: znachimye-lichnosti
 title: Значимые Личности
 wordpress_id: 715
 categories:
-- О жизни
+- life
 tags:
 - Значимые Личности
 - Наблюдения

@@ -7,7 +7,7 @@ slug: ledenec
 title: Леденец
 wordpress_id: 64
 categories:
-- О жизни
+- life
 tags:
 - Кино
 - Наблюдения

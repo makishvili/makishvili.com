@@ -7,7 +7,7 @@ slug: bezuslovnoe-doverie
 title: Безусловное доверие
 wordpress_id: 90
 categories:
-- О жизни
+- life
 tags:
 - Катя
 - Наблюдения

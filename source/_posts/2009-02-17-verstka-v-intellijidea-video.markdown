@@ -7,8 +7,8 @@ slug: verstka-v-intellijidea-video
 title: Вёрстка в IntelliJIDEA. Видео
 wordpress_id: 236
 categories:
-- О технологиях
-- Доклады
+- tech
+- presentation
 tags:
 - HTML
 - IntelliJIDEA

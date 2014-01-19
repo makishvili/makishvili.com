@@ -7,7 +7,7 @@ slug: son-i-poezd
 title: Сон и поезд
 wordpress_id: 447
 categories:
-- О жизни
+- life
 tags:
 - Наблюдения
 - Сон

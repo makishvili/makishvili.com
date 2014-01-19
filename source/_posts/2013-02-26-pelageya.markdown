@@ -7,7 +7,7 @@ slug: pelageya
 title: Пелагея и Дарья Мороз "Ой, да не вечер"
 wordpress_id: 1657
 categories:
-- О жизни
+- life
 ---
 {% youtube l1TzJm1BD2I %}
 

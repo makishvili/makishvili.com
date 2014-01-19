@@ -7,7 +7,7 @@ slug: ponyat
 title: Понять
 wordpress_id: 126
 categories:
-- О жизни
+- life
 ---
 
 > - Я вас понимаю, да. Я все могу понять, если захочу простить...

@@ -7,7 +7,7 @@ slug: quicksilver-and-snow-leopard
 title: Quicksilver and Snow Leopard
 wordpress_id: 1187
 categories:
-- О технологиях
+- tech
 tags:
 - Mac OS X
 - Quicksilver

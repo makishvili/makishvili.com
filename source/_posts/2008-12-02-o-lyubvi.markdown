@@ -7,7 +7,7 @@ slug: o-lyubvi
 title: О любви
 wordpress_id: 39
 categories:
-- О жизни
+- life
 tags:
 - Наблюдения
 ---

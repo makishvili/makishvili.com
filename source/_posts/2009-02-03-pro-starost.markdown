@@ -7,7 +7,7 @@ slug: pro-starost
 title: Про старость
 wordpress_id: 157
 categories:
-- О жизни
+- life
 tags:
 - Наблюдения
 ---

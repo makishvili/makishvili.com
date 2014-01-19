@@ -7,7 +7,7 @@ slug: semya
 title: Семья!
 wordpress_id: 1415
 categories:
-- О жизни
+- life
 ---
 
 Именно так — с большой буквы. 

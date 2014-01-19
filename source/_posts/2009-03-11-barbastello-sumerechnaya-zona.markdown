@@ -7,7 +7,7 @@ slug: barbastello-sumerechnaya-zona
 title: 'barbastello: Сумеречная зона'
 wordpress_id: 408
 categories:
-- О жизни
+- life
 tags:
 - Катя
 - Семья

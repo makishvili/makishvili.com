@@ -7,7 +7,7 @@ slug: ej-ty-nikto
 title: Эй, ты никто
 wordpress_id: 1141
 categories:
-- О жизни
+- life
 tags:
 - Дети
 - Качество жизни

@@ -7,7 +7,7 @@ slug: daniel-lavoie-ils-saiment
 title: Daniel Lavoie "Ils s'aiment"
 wordpress_id: 1218
 categories:
-- О жизни
+- life
 ---
 
 

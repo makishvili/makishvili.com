@@ -7,7 +7,7 @@ slug: tanec-prekrasen
 title: Танец прекрасен
 wordpress_id: 1409
 categories:
-- О жизни
+- life
 ---
 
 

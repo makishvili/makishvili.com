@@ -7,7 +7,7 @@ slug: dostupno-o-psixologii
 title: Доступно о психологии
 wordpress_id: 973
 categories:
-- О жизни
+- life
 tags:
 - Психология
 - Рекомендации

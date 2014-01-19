@@ -7,7 +7,7 @@ slug: smirenie
 title: Смирение
 wordpress_id: 96
 categories:
-- О жизни
+- life
 ---
 
 Если это слово произошло от слова **мир**,

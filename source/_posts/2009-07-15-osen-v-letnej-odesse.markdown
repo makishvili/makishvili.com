@@ -7,7 +7,7 @@ slug: osen-v-letnej-odesse
 title: Осень в летней Одессе
 wordpress_id: 1042
 categories:
-- О жизни
+- life
 tags:
 - Одесса
 ---

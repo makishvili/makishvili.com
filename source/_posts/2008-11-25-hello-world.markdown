@@ -7,8 +7,8 @@ slug: hello-world
 title: Новый блог
 wordpress_id: 1154
 categories:
-- О жизни
-- О технологиях
+- life
+- tech
 tags:
 - Блог
 ---

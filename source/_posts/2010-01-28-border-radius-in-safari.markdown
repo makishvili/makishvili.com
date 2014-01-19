@@ -7,7 +7,7 @@ slug: border-radius-in-safari
 title: Border-radius in Safari
 wordpress_id: 1345
 categories:
-- О технологиях
+- tech
 tags:
 - Safari
 ---

@@ -7,7 +7,7 @@ slug: podumalos-tut
 title: Подумалось тут...
 wordpress_id: 24
 categories:
-- О жизни
+- life
 tags:
 - Семья
 ---

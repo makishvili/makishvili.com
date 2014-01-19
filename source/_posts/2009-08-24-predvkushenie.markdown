@@ -7,7 +7,7 @@ slug: predvkushenie
 title: Предвкушение
 wordpress_id: 1109
 categories:
-- О жизни
+- life
 tags:
 - Книги
 - Наблюдения

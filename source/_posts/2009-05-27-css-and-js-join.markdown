@@ -7,7 +7,7 @@ slug: css-and-js-join
 title: Объединение JavaScript и CSS в одном файле
 wordpress_id: 928
 categories:
-- О технологиях
+- tech
 tags:
 - HTML
 - Добавить метку

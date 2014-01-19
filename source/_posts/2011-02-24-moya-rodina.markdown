@@ -7,7 +7,7 @@ slug: moya-rodina
 title: Моя Родина
 wordpress_id: 1540
 categories:
-- О жизни
+- life
 tags:
 - Доверие
 - Качество жизни

@@ -7,7 +7,7 @@ slug: nereshitelnyj-i-neuverennyj-oshibki-vospitaniya
 title: Нерешительный и неуверенный - ошибки воспитания
 wordpress_id: 1061
 categories:
-- О жизни
+- life
 tags:
 - Дети
 - Психология

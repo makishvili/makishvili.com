@@ -7,7 +7,7 @@ slug: cygane-i-belye-deti
 title: Цыгане и белые дети
 wordpress_id: 1056
 categories:
-- О жизни
+- life
 tags:
 - Дети
 - Наблюдения

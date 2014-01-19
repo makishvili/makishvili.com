@@ -7,7 +7,7 @@ slug: twitter
 title: Twitter
 wordpress_id: 1215
 categories:
-- О технологиях
+- tech
 tags:
 - Twitter
 - Блог

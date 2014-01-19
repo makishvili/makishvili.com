@@ -7,7 +7,7 @@ slug: ya-drugoj
 title: Я другой
 wordpress_id: 827
 categories:
-- О жизни
+- life
 tags:
 - Наблюдения
 ---

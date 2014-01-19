@@ -7,7 +7,7 @@ slug: sistema-polzovatelskogo-poiska
 title: Система пользовательского поиска
 wordpress_id: 1211
 categories:
-- О технологиях
+- tech
 tags:
 - Google
 - Блог

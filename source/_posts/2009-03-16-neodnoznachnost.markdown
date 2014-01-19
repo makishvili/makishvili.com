@@ -7,7 +7,7 @@ slug: neodnoznachnost
 title: Неоднозначность
 wordpress_id: 441
 categories:
-- О жизни
+- life
 tags:
 - Наблюдения
 ---

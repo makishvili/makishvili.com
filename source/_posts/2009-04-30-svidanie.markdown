@@ -7,7 +7,7 @@ slug: svidanie
 title: Свидание
 wordpress_id: 712
 categories:
-- О жизни
+- life
 tags:
 - Катя
 - Натя
