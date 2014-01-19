@@ -115,11 +115,13 @@ $hide-line-numbers: true;
 }
 
 .sans-serif-font-bold { 
-  font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif; 
+//  font-family: "Fjalla One", "Helvetica Neue", Arial, sans-serif;
+  font-family: inherit;
 }
 
 .sans-serif-font { 
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; 
+//  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: inherit;
 }
 
 
@@ -129,7 +131,7 @@ $hide-line-numbers: true;
 
 html { 
   border-top: 10px solid $accent-color;
-  font: 125%/1 "PT Serif", Georgia, Times, "Times New Roman", serif; 
+  font: 125%/1 Georgia, Times, "Times New Roman", serif;
 }
 
 body { 
@@ -329,9 +331,9 @@ body {
   
     h1 { 
       font-size: 62.000px;
-      font-size: 3.1rem;
+      font-size: 2.8rem;
       font-weight: bold;
-      text-transform: uppercase;
+      font-family: $header-title-font-family;
       margin-bottom: 7.640px;
       margin-bottom: 0.382rem;
     
@@ -342,7 +344,7 @@ body {
   
     h2 { 
       @extend .font-size-large;
-      @extend .sans-serif-font;
+      font-family: $header-subtitle-font-family;
       color: $secondary-text-color;
     }
   }
@@ -487,12 +489,15 @@ article {
     @extend .margin-bottom-large;
     
     h1 {
+      font-family: $header-title-font-family;
       font-size: 45.959px;
       font-size: 2.298rem; /* 1.916 + 0.382 */
+      font-size: 1.8rem; /* 1.916 + 0.382 */
       margin-bottom: 3.456px;
       margin-bottom: 0.173rem;
       line-height: 50.58px;
       line-height: 2.534rem; /* 1.916 + 0.618 */
+      text-align: left;
       
       a, a:hover {
         color: $text-color; 
@@ -504,7 +509,7 @@ article {
       @extend .sans-serif-font;
       color: $secondary-text-color;
       line-height: 1.184rem;
-      text-align: center;
+      text-align: left;
       
       time {
         @extend .margin-bottom-large;
