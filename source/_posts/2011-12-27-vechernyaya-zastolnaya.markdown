@@ -10,4 +10,5 @@ categories:
 - life
 ---
 
+{% youtube oi9oBKyzCF4 %}
 

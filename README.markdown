@@ -50,6 +50,7 @@ rake deploy
 
 * [Категории в отдельную страницу](http://highaltitudehacks.com/2013/06/30/octopress-category-pages-with-preview-and-pagination/)
 ## Плагины:
+* [Список](https://github.com/imathis/octopress/wiki/3rd-party-plugins)
 * [Youtube.rb](https://gist.github.com/joelverhagen/1805814)
 
 ## Темы

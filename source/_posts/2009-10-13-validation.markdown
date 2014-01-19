@@ -15,6 +15,6 @@ tags:
 
 Замечательный фильм — 16 минут удовольствия
 
-
+{% youtube Cbk980jV7Ao %}
 
 [YoYurec](http://yoyurec.in.ua), спасибо за ссылку :)
