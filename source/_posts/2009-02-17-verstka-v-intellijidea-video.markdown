@@ -8,6 +8,7 @@ title: Вёрстка в IntelliJIDEA. Видео
 wordpress_id: 236
 categories:
 - О технологиях
+- Доклады
 tags:
 - HTML
 - IntelliJIDEA

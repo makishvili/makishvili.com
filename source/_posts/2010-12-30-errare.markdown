@@ -9,6 +9,7 @@ wordpress_id: 1475
 categories:
 - О жизни
 - О технологиях
+- Доклады
 tags:
 - HTML
 - Качество жизни
