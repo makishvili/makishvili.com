@@ -49,6 +49,7 @@ rake deploy
 * http://everythingisgray.com/2013/06/15/on-migrating-from-wordpress-to-octopress
 
 * [Категории в отдельную страницу](http://highaltitudehacks.com/2013/06/30/octopress-category-pages-with-preview-and-pagination/)
+
 ## Плагины:
 * [Список](https://github.com/imathis/octopress/wiki/3rd-party-plugins)
 * [Youtube.rb](https://gist.github.com/joelverhagen/1805814)
@@ -58,6 +59,8 @@ rake deploy
 * [Список](https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes)
 
 ## Разное
+* [Jekill и Liquid](http://habrahabr.ru/post/207650/) - по-русски о Ликвид
+* [Яндекс.Метрика в Octopress](http://www.mr-rino.com/blog/2012/05/25/dobavlieniie-iandieks-dot-mietriki-v-octopress/)
 * [Markdown cheetsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-images)
 * [Shower on markdown](https://github.com/shower/jekyller)
 * [Exitwp](https://github.com/thomasf/exitwp) - Экспорт Wordpress -> Markdown
