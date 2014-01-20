@@ -338,8 +338,12 @@ body {
       margin-bottom: 7.640px;
       margin-bottom: 0.382rem;
     
-      a, a:hover { 
+      a {
         color: $text-color; 
+      }
+
+      a:hover {
+        color: #538f5f;
       }
     }
   
@@ -500,8 +504,12 @@ article {
       line-height: 2.534rem; /* 1.916 + 0.618 */
       text-align: left;
       
-      a, a:hover {
+      a {
         color: $text-color; 
+      }
+
+      a:hover {
+        color: #538f5f;
       }
     }
     

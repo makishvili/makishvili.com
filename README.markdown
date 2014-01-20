@@ -60,6 +60,7 @@ rake deploy
 
 ## Разное
 * [Jekill и Liquid](http://habrahabr.ru/post/207650/) - по-русски о Ликвид
+* [Liquid for Designers](https://github.com/shopify/liquid/wiki/liquid-for-designers)
 * [Яндекс.Метрика в Octopress](http://www.mr-rino.com/blog/2012/05/25/dobavlieniie-iandieks-dot-mietriki-v-octopress/)
 * [Markdown cheetsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-images)
 * [Shower on markdown](https://github.com/shower/jekyller)
