@@ -40,6 +40,7 @@ rake deploy
 
 ##Где брать знания?
 * http://www.tomordonez.com/blog/2012/06/04/creating-a-github-blog-using-octopress/
+* [Добавить about-страницу](http://kvz.io/blog/2012/09/25/blog-with-octopress/)
 
 * http://ajaxblog.ru/octopress/octopress-blogging-for-geeks/
 * http://maxmikheev.ru/blog/2012/07/10/install-octopress-on-mac-os/
