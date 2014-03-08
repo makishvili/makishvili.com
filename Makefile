@@ -7,6 +7,9 @@ readify.set:
 
 readify: readify.get readify.set
 
+import:
+	cp -r /Users/makishvili/Yandex.Disk/StoryMill/sm-export/* source/books
+
 gen:
 	rake generate;
 
