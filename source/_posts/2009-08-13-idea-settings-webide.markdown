@@ -15,8 +15,10 @@ tags:
 
 Если вы пользовались IntelliJIDEA, а сейчас хотите попробовать WebIDE, то скорее всего вам хочется в WebIDE иметь те же настройки, что и в IDEA.
 
-Вот способ:
+Два способа:
+
 1. в IDEA сделать **File** -> **Export settings** -> получить файлик settings.jar
+
 2. в WebIDE сделать **File** -> **Import settings** <- загрузить settings.jar
 
 **Update:**

@@ -11,5 +11,6 @@ categories:
 ---
 
 Одного кадра достаточно, чтобы захотеть посмотреть фильм целиком.
-![](http://www.equipbiz.co.nz/blog/pictures/bella-wallpaper.jpg)
+
+![](/images/post/2010-03-19-bella/bella.jpg)
 
