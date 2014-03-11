@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://makishvili.github.io/octopress
+url: http://makishvili.com
 title: Вадим Макишвили
 subtitle: Вглядываясь в смыслы
 author: Вадим Макишвили
@@ -26,10 +26,10 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /octopress
+root: /
 permalink: /:year/:month/:day/:title/
 source: source
-destination: public/octopress
+destination: public/
 plugins: plugins
 code_dir: downloads/code
 category_dir: category
