@@ -21,7 +21,7 @@ class YaVideo < Liquid::Tag
   end
 
   def render(context)
-    "<iframe width=\"745\" height=\"559\" frameborder=\"0\" src=\"http://video.yandex.ru/iframe/makishvili/#{@id}/\"></iframe>"
+    "<iframe width=\"745\" height=\"559\" frameborder=\"0\" src=\"http://video.yandex.ru/iframe/#{@id}/\"></iframe>"
   end
 
   Liquid::Template.register_tag "yavideo", self
