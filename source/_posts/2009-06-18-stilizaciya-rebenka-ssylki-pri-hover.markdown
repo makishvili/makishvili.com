@@ -18,23 +18,22 @@ tags:
 Есть структура:
 
     
-    <code><a class="b-link" href="" >
+    a class="b-link" href="" >
         Телефон в копилке
         <img class="b-img" src="image.png" alt=""/>
-    </a></code>
-
+    </a>
 
 
 Есть стили к ней:
 
     
-    <code>.b-img {
+    .b-img {
         display: none
     }
     
     .b-link:hover .b-img {
         display: inline
-    }</code>
+    }
 
 
 
@@ -42,13 +41,13 @@ tags:
 <!-- more -->
 
 
-### Как мы с этим боролись?
+## Как мы с этим боролись?
 
 
 На ссылку вешали одноразовый expression и расширяли селектор:
 
     
-    <code>* html .b-link {
+    * html .b-link {
         zoom: expression(
             runtimeStyle.zoom = 1,
             onmouseover = function() { className += " b-link-hover" },
@@ -60,22 +59,21 @@ tags:
     .b-link:hover .b-img {
         display: inline
     }
-    </code>
 
 
 Это было старое решение.
 
 
 
-### Элегантное решение
+## Элегантное решение
 
 
 Новое решение рождено сегодня — оно очень дешевое — нужно написать один дополнительный селектор, который решает нам проблему.
 
     
-    <code>.b-link:hover{
+    .b-link:hover{
         word-spacing: 0
-    }</code>
+    }
 
 
 
@@ -84,29 +82,29 @@ tags:
 
 
 
-### Слова благодарности
+## Слова благодарности
 
 
 Спасибо Роме Комарову за [статью](http://kizu.ru/webdev/ie-a-hover/), к которой я сегодня очередной раз вернулся. Благодаря этой статье я понял, что можно не писать expression, если написать что-то из нижеследующего
 
     
-    <code>.b-link:hover{background: #rgb}
+    .b-link:hover{background: #rgb}
     .b-link:hover{background: url(transparent.gif)}
-    .b-link:hover{background: url(about:blank)}</code>
+    .b-link:hover{background: url(about:blank)}
 
 
 
 Эксперимент показал, что свойство background-image не заставляет ИЕ6 перерисовать DOM. Этот селектор проблему не решает
 
     
-    <code>.b-link:hover{background-image: url(about:blank)}</code>
+    .b-link:hover{background-image: url(about:blank)}
 
 
 
 Но моя проблема была в том, что у элемента `.b-link` уже был фоновый цвет и сбрасывать его селекторами Ромы мне нельзя, потому что "дизайн".
 
     
-    <code>.b-link{background: #feb247}</code>
+    .b-link{background: #feb247}
 
 
 
@@ -114,16 +112,16 @@ tags:
 Первое, что пришло в голову - продублировать фоновый цвет. Оказалось, что ИЕ написан хорошо :) Он не перезапускает reflow, так как значение #rrggbb не изменилось:
 
     
-    <code>.b-link{background: #feb247}
-    .b-link:hover{background: #feb247}</code>
+    .b-link{background: #feb247}
+    .b-link:hover{background: #feb247}
 
 
 
 Второе, что мне пришло в голову — изменить последний символ в #rrggbb на "один вниз" — было 7, стало 6. И, да, заработало. При этом мой глаз не смог различить подмену цвета:
 
     
-    <code>.b-link{background: #feb247}
-    .b-link:hover{background: #feb246}</code>
+    .b-link{background: #feb247}
+    .b-link:hover{background: #feb246}
 
 
 
@@ -135,7 +133,7 @@ tags:
 Итого, стили выглядят так:
 
     
-    <code>.b-img {
+    .b-img {
         display: none
     }
     
@@ -145,7 +143,7 @@ tags:
     
     .b-link:hover .b-img {
         display: inline
-    }</code>
+    }
 
 
 

@@ -20,14 +20,14 @@ categories:
 А теперь проблему opacity можно забыть, как страшный сон:
 
     
-    <code>.block
+    .block
     {
         background: #rgba
     }
     * html .block
     {
         filter:progid:DXImageTransform.Microsoft.gradient (startColorstr=#99000000, endColorstr=#99000000);
-    }</code>
+    }
 
 
 В начальной и конечной позиции один и тот же RGB (000000) и добавляю перед ним одно и то же значение Alpha (99)
@@ -36,24 +36,24 @@ categories:
 Я протестировал скорость рендеринга страницы, на которой выливается 300 элементов с gradient-фильтром — он не замедляет рендеринг и это сильно радует
 
 Но этот случай описывает ситуацию, когда нужно сделать однотонный полупрозрачный цвет, как например в модальных диалогах, когда вся остальная страница затемняется. 
-![](http://makishvili.com/pro/2009/11/ie-rgba/modal.png)
+![](http://makishvili.com/images/post/2009-11-02-ie-rgba/modal.png)
 
 
 Иногда использовать png-24 всё-таки необходимо, как например в случае, когда нужно обрезать длинную неразрывную строку, уводя ее градиентом в непрозрачность. 
 
-![](http://makishvili.com/pro/2009/11/ie-rgba/fade.png)
+![](http://makishvili.com/images/post/2009-11-02-ie-rgba/fade.png)
 
 В этом случае можно использовать второй способ.
 
     
-    <code>.block
+    .block
     {
         background: url(image.png)
     }
     * html .block
     {
         filter:progid:DXImageTransform.Microsoft.gradient (startColorstr=#00ffffff, endColorstr=#ffffffff, GradientType=1);
-    }</code>
+    }
 
 
 

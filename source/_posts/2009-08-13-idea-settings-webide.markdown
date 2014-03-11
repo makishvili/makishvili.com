@@ -21,7 +21,3 @@ tags:
 
 **Update:**
 Выяснилось, что Live Templates для CSS от Яндекса были включены в инсталляцию IntelliJIDEA уже в поздних билдах Diana. И в Maia они тоже уже идут по-умолчанию. А вот в WebIDE они случайно не попали (ну EAP же).
-
-Чтобы в WebIDE подложить наши LT, скачайте [архив](http://makishvili.com/pro/2009/08/idea-settings-webide/ya_css_markuper.xml.zip) и разверните:
-**MacOS:** ~/Library/Preferences/WebIDE10/templates
-**Win:** User\YouName\.WebIde10\config\templates\

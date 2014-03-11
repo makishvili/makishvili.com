@@ -14,17 +14,17 @@ tags:
 - ZenCoding
 ---
 
-### Справочник
+## Справочник
 
 
 На [странице проекта](http://code.google.com/p/zen-coding/wiki/CheatSheets) появились читы.
 Всё перед глазами. Удобно:
 
-![ZenCoding CheatSheets](http://makishvili.com/pro/2010/02/19/zencoding-cheatsheets/cheat.png)
+![ZenCoding CheatSheets](http://makishvili.com/images/post/2010-02-19-zencoding-cheatsheets-and-jetbrains-webstorm/cheat.png)
 
 
 
-### Поддержка в WebStorm
+## Поддержка в WebStorm
 
 
 Частичная, в процессе разработки, например, в последнем билде 94.335

@@ -17,16 +17,11 @@ tags:
 Решение — использовать button вместо input:
 
     
-    <code>
     <style>
         button {font-size: 1px}
         button span {font-size: 14px}
-    </style><code>
-
-
-
-    
-    <code><button><span>Текст кнопки</span></button><code>
+    </style>
+    <button><span>Текст кнопки</span></button>
 
 
 

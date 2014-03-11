@@ -15,7 +15,7 @@ tags:
 В Safari столкнулся с неаккуратным рендерингом элемента, если ему задан  border-radius и  фоновый цвет. Увидеть проблему и её решение можно на [тестовой странице](http://makishvili.com/code/border-radius-in-safari.html).
 
 
-### Решение
+## Решение
 
 
 1. Фоновый цвет у блока убрать
@@ -24,8 +24,7 @@ tags:
 4. Обёртке задать border-radius,  меньше на толщину бордера, чем у внешнего блока 
 
     
-    <code>
-    </code><div class="button"><div class="button-inner">Кнопка</div></div>
+    <div class="button"><div class="button-inner">Кнопка</div></div>
     
     .button
     {
@@ -51,11 +50,11 @@ tags:
 
 
 
-### Update
+## Update
 
 
 Между фоном и бордером появляются дырки, если border-radius у обоих блоков одинаковый и:
-![](http://makishvili.com/pro/2010/01/28/bor-safari.png)
+![](http://makishvili.com/images/post/2010-01-28-border-radius-in-safari/bor-safari.png)
 1. Внутреннему блоку задана большая высота (height)
 2. Его содержимое имеет большой font-size
 3. Его содержимое представлено многострочным текстовым узлом
