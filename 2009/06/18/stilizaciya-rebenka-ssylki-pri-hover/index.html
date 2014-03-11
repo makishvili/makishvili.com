@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Стилизация ребенка ссылки при :hover - Вадим Макишвили</title>
+  <meta name="author" content="Вадим Макишвили">
+
+  
+  <meta name="description" content="Хочу описать решение с пылу с жару. Есть структура: a class="b-link" href="" &gt; Телефон в копилке &lt;img class="b-img" src="image.png" alt=""/&gt &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://makishvili.com/2009/06/18/stilizaciya-rebenka-ssylki-pri-hover">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Вадим Макишвили" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+  <style>
+      pre {text-align: left;}
+  </style>
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Вадим Макишвили</a></h1>
+  
+    <h2>Вглядываясь в смыслы</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:makishvili.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Главная</a></li>
+  <li><a href="/category/presentation">Презентации</a></li>
+  <li><a href="/books">Повести</a></li>
+  <li><a href="/blog/archives">Архив</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Стилизация ребенка ссылки при :hover</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-06-18T13:16:21+03:00" pubdate data-updated="true">Четверг, 18 Июня 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Хочу описать решение с пылу с жару.</p>
+
+<p>Есть структура:</p>
+
+<pre><code>a class="b-link" href="" &gt;
+    Телефон в копилке
+    &lt;img class="b-img" src="image.png" alt=""/&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p>Есть стили к ней:</p>
+
+<pre><code>.b-img {
+    display: none
+}
+
+.b-link:hover .b-img {
+    display: inline
+}
+</code></pre>
+
+<p>Известно, что второй селектор в ИЕ6 не отработает.</p>
+
+<!-- more -->
+
+
+<h2>Как мы с этим боролись?</h2>
+
+<p>На ссылку вешали одноразовый expression и расширяли селектор:</p>
+
+<pre><code>* html .b-link {
+    zoom: expression(
+        runtimeStyle.zoom = 1,
+        onmouseover = function() { className += " b-link-hover" },
+        onmouseout = function() { className = className.replace(/ b-link-hover/, "") }
+    );
+}
+
+.b-link-hover .b-img,
+.b-link:hover .b-img {
+    display: inline
+}
+</code></pre>
+
+<p>Это было старое решение.</p>
+
+<h2>Элегантное решение</h2>
+
+<p>Новое решение рождено сегодня — оно очень дешевое — нужно написать один дополнительный селектор, который решает нам проблему.</p>
+
+<pre><code>.b-link:hover{
+    word-spacing: 0
+}
+</code></pre>
+
+<p>Суть проста &ndash; этот селектор перезапускает Reflow, после чего ИЕ6 начинает применять селекторы для элементов в ссылках <code>.b-link:hover .b-img {}</code>
+Приятно, что это решение работает несмотря на то, включен ли у ссылки hasLayout или нет. И не пугайтесь, это не обнуление пространства между словами, а дефолтное значение браузера.</p>
+
+<h2>Слова благодарности</h2>
+
+<p>Спасибо Роме Комарову за <a href="http://kizu.ru/webdev/ie-a-hover/">статью</a>, к которой я сегодня очередной раз вернулся. Благодаря этой статье я понял, что можно не писать expression, если написать что-то из нижеследующего</p>
+
+<pre><code>.b-link:hover{background: #rgb}
+.b-link:hover{background: url(transparent.gif)}
+.b-link:hover{background: url(about:blank)}
+</code></pre>
+
+<p>Эксперимент показал, что свойство background-image не заставляет ИЕ6 перерисовать DOM. Этот селектор проблему не решает</p>
+
+<pre><code>.b-link:hover{background-image: url(about:blank)}
+</code></pre>
+
+<p>Но моя проблема была в том, что у элемента <code>.b-link</code> уже был фоновый цвет и сбрасывать его селекторами Ромы мне нельзя, потому что &ldquo;дизайн&rdquo;.</p>
+
+<pre><code>.b-link{background: #feb247}
+</code></pre>
+
+<p>Первое, что пришло в голову &ndash; продублировать фоновый цвет. Оказалось, что ИЕ написан хорошо :) Он не перезапускает reflow, так как значение #rrggbb не изменилось:</p>
+
+<pre><code>.b-link{background: #feb247}
+.b-link:hover{background: #feb247}
+</code></pre>
+
+<p>Второе, что мне пришло в голову — изменить последний символ в #rrggbb на &ldquo;один вниз&rdquo; — было 7, стало 6. И, да, заработало. При этом мой глаз не смог различить подмену цвета:</p>
+
+<pre><code>.b-link{background: #feb247}
+.b-link:hover{background: #feb246}
+</code></pre>
+
+<p>Я позвал верстальщиков нашей Службы HTML-верстки и поделился тем, что решение Ромы рабочее и что у него есть такой нюанс с изменением rgb.</p>
+
+<p>Виталя неделю назад обнаружил, что если просто экспрешином добавлять или удалять класс у ссылки (и больше ничего не делать), то нужный селектор тоже отрабатывает, потому что перезапускается reflow. Возможно есть еще какое-то свойство, которое сделает это и при этом не повлияет на часто используемые свойства. Надо поискать. Виталя, спасибо тебе за мысль :)</p>
+
+<p>Я поискал 5 минут и был найден <code>word-spacing</code>.
+Итого, стили выглядят так:</p>
+
+<pre><code>.b-img {
+    display: none
+}
+
+.b-link:hover {
+    word-spacing: 0
+}
+
+.b-link:hover .b-img {
+    display: inline
+}
+</code></pre>
+
+<p>Пользуйтесь на здоровье :)</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<!-- <span class="byline author vcard">Posted by <span class="fn">makishvili</span></span> -->
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-06-18T13:16:21+03:00" pubdate data-updated="true">Четверг, 18 Июня 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/category/tech/'>tech</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://makishvili.com/2009/06/18/stilizaciya-rebenka-ssylki-pri-hover/" data-via="" data-counturl="http://makishvili.com/2009/06/18/stilizaciya-rebenka-ssylki-pri-hover/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2009/06/09/intellijidea-maia/" title="Previous Post: Немного прекрасного об IntelliJIDEA Maia">&laquo; Немного прекрасного об IntelliJIDEA Maia</a>
+      
+      
+        <a class="basic-alignment right" href="/2009/06/19/more/" title="Next Post: Море">Море &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2014/03/11/print-and-go/">Распечатай Яндекс.Карты</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/26/pelageya/">Пелагея и Дарья Мороз "Ой, да не вечер"</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/12/28/vechernyaya-zastolnaya/">Вечерняя застольная</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/prostoj-sposob-vyyavit-svoi-glubinnye-straxi/">Простой способ выявить свои глубинные страхи</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/09/12/dyshi/">Дыши</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Вадим Макишвили -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

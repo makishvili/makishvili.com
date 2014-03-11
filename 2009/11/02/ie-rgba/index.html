@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>IE и Rgba - Вадим Макишвили</title>
+  <meta name="author" content="Вадим Макишвили">
+
+  
+  <meta name="description" content="Вслед за Женей, учусь новому.
+http://bolknote.ru/2009/11/01/~2299 Женя удивился, а вслед за ним, удивился и я. Сколько лет назад командой разработки &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://makishvili.com/2009/11/02/ie-rgba">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Вадим Макишвили" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+  <style>
+      pre {text-align: left;}
+  </style>
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Вадим Макишвили</a></h1>
+  
+    <h2>Вглядываясь в смыслы</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:makishvili.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Главная</a></li>
+  <li><a href="/category/presentation">Презентации</a></li>
+  <li><a href="/books">Повести</a></li>
+  <li><a href="/blog/archives">Архив</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">IE и Rgba</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-02T13:20:33+02:00" pubdate data-updated="true">Понедельник,  2 Ноября 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Вслед за Женей, учусь новому.
+<a href="http://bolknote.ru/2009/11/01/~2299">http://bolknote.ru/2009/11/01/~2299</a></p>
+
+<p>Женя удивился, а вслед за ним, удивился и я. Сколько лет назад командой разработки MSIE были придуманы разные клевые штуки, облегчающие разработку. И многие из них всё еще не предложены нам от W3C.</p>
+
+<p>Сегодня, благодаря этому новому знанию, я понял как решить две труднорешаемые задачи. Издавна, чтобы сделать фон блока полупрозрачным, мы вынуждены были использовать или png-24 картинку в фоне или opacity-свойство. Но в случае с png-24, для ИЕ6 нужно писать AlphaImageLoader фильтр, который катастрофически замедляет рендеринг страницы. А в случае с opacity приходилось придумывать трюки, чтобы дети блока не бледнели от родительского opacity.</p>
+
+<p>А теперь проблему opacity можно забыть, как страшный сон:</p>
+
+<pre><code>.block
+{
+    background: #rgba
+}
+* html .block
+{
+    filter:progid:DXImageTransform.Microsoft.gradient (startColorstr=#99000000, endColorstr=#99000000);
+}
+</code></pre>
+
+<p>В начальной и конечной позиции один и тот же RGB (000000) и добавляю перед ним одно и то же значение Alpha (99)
+Значение Alpha указывается в 16-тиричной системе, где 00 &ndash; полностью прозрачный, а ff &ndash; непрозрачный пиксел</p>
+
+<p>Я протестировал скорость рендеринга страницы, на которой выливается 300 элементов с gradient-фильтром — он не замедляет рендеринг и это сильно радует</p>
+
+<p>Но этот случай описывает ситуацию, когда нужно сделать однотонный полупрозрачный цвет, как например в модальных диалогах, когда вся остальная страница затемняется.</p>
+
+<p><img src="http://makishvili.com/images/post/2009-11-02-ie-rgba/modal.png" alt="" /></p>
+
+<p>Иногда использовать png-24 всё-таки необходимо, как например в случае, когда нужно обрезать длинную неразрывную строку, уводя ее градиентом в непрозрачность.</p>
+
+<p><img src="http://makishvili.com/images/post/2009-11-02-ie-rgba/fade.png" alt="" /></p>
+
+<p>В этом случае можно использовать второй способ.</p>
+
+<pre><code>.block
+{
+    background: url(image.png)
+}
+* html .block
+{
+    filter:progid:DXImageTransform.Microsoft.gradient (startColorstr=#00ffffff, endColorstr=#ffffffff, GradientType=1);
+}
+</code></pre>
+
+<p>GradientType принимает значение 1, если градиент рисуется слева-направо; и 0, если градиент сверху-вниз.</p>
+
+<p>MSIE хороший браузер.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<!-- <span class="byline author vcard">Posted by <span class="fn">makishvili</span></span> -->
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-02T13:20:33+02:00" pubdate data-updated="true">Понедельник,  2 Ноября 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/category/biez-rubriki/'>Без рубрики</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://makishvili.com/2009/11/02/ie-rgba/" data-via="" data-counturl="http://makishvili.com/2009/11/02/ie-rgba/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2009/11/02/portrety-konstantin-paustovskij/" title="Previous Post: Портреты. Константин Паустовский">&laquo; Портреты. Константин Паустовский</a>
+      
+      
+        <a class="basic-alignment right" href="/2009/11/03/sergej-chikuenok-zen-coding-v0-5/" title="Next Post: Сергей Чикуенок. Zen Coding v0.5">Сергей Чикуенок. Zen Coding v0.5 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2014/03/11/print-and-go/">Распечатай Яндекс.Карты</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/26/pelageya/">Пелагея и Дарья Мороз "Ой, да не вечер"</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/12/28/vechernyaya-zastolnaya/">Вечерняя застольная</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/prostoj-sposob-vyyavit-svoi-glubinnye-straxi/">Простой способ выявить свои глубинные страхи</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/09/12/dyshi/">Дыши</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Вадим Макишвили -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

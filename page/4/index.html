@@ -1,0 +1,684 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Вадим Макишвили</title>
+  <meta name="author" content="Вадим Макишвили">
+
+  
+  <meta name="description" content="В Safari столкнулся с неаккуратным рендерингом элемента, если ему задан border-radius и фоновый цвет. Увидеть проблему и её решение можно на тестовой &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://makishvili.com/page/4">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Вадим Макишвили" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+  <style>
+      pre {text-align: left;}
+  </style>
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Вадим Макишвили</a></h1>
+  
+    <h2>Вглядываясь в смыслы</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:makishvili.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Главная</a></li>
+  <li><a href="/category/presentation">Презентации</a></li>
+  <li><a href="/books">Повести</a></li>
+  <li><a href="/blog/archives">Архив</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/01/28/border-radius-in-safari/">Border-radius in Safari</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-28T13:50:33+02:00" pubdate data-updated="true">Четверг, 28 Января 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>В Safari столкнулся с неаккуратным рендерингом элемента, если ему задан  border-radius и  фоновый цвет. Увидеть проблему и её решение можно на <a href="http://makishvili.com/code/border-radius-in-safari.html">тестовой странице</a>.</p>
+
+<h2>Решение</h2>
+
+<ol>
+<li><p>Фоновый цвет у блока убрать</p></li>
+<li><p>Внутрь блока добавить обертку</p></li>
+<li><p>Обертке задать фоновый цвет</p></li>
+<li><p>Обёртке задать border-radius,  меньше на толщину бордера, чем у внешнего блока</p></li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;button&quot;</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">&quot;button-inner&quot;</span><span class="nt">&gt;</span>Кнопка<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nc">.button</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="k">border</span><span class="o">:</span> <span class="m">5px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+</span><span class='line'>    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+</span><span class='line'>    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+</span><span class='line'>    <span class="o">-</span><span class="n">khtml</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.button-inner</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span>
+</span><span class='line'>    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span>
+</span><span class='line'>    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span>
+</span><span class='line'>    <span class="o">-</span><span class="n">khtml</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">background</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Update</h2>
+
+<p><img src="http://makishvili.com/images/post/2010-01-28-border-radius-in-safari/bor-safari.png" alt="" /></p>
+
+<p>Между фоном и бордером появляются дырки, если border-radius у обоих блоков одинаковый и:</p>
+
+<ol>
+<li><p>Внутреннему блоку задана большая высота (height)</p></li>
+<li><p>Его содержимое имеет большой font-size</p></li>
+<li><p>Его содержимое представлено многострочным текстовым узлом</p></li>
+</ol>
+
+
+<p>Внутреннему блоку нужно задавать border-radius с меньшим значением, чем у внешнего блока, потому что при border-radius:30px внешняя сторона бордера (толщина которого равна 5px) скруглена с радиусом 30px, а внутренняя сторона скруглена с радиусом 25px, меньше на толщину бордера.</p>
+
+<p>Спасибо Александру Ермолаеву за багрепорт, а Степану Резникову за допиливание решения и объяснение про кривизну бордера.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/12/15/opera-mobile-vs-mini/">Opera Mobile vs Mini</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-12-15T10:13:25+02:00" pubdate data-updated="true">Вторник, 15 Декабря 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://habrahabr.ru/company/opera/blog/77258/">Чем они отличаются?</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/12/08/talidomid/">Талидомид</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-12-08T01:01:39+02:00" pubdate data-updated="true">Вторник,  8 Декабря 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><em>Это сообщение — фрагмент, который я не включил в презентацию &ldquo;Ошибка. Осознание, примирение, извлечение пользы&rdquo;. К тому же в Минске на WSD&#8217;09 я пообещал письменно раскрыть свои соображения на тему &ldquo;Какова ценность наших ошибок для наших пользователей&rdquo;. Обещание выполняю.</em></p>
+
+<p>В ежедневной работе я имею дело с задачами с типом &ldquo;ошибка&rdquo;, и у каждой ошибки есть важность — &ldquo;minor&rdquo;, &ldquo;major&rdquo;, &ldquo;critical&rdquo;, &ldquo;blocker&rdquo;. Работая в этой отрасли долго и каждый день сталкиваясь с критикалами и мажорами, возникает иллюзия, что я занимаюсь делом крайне важным и ответственным.</p>
+
+<p>Вот только ой ли? Сильно ли я ошибусь, если скажу, что работа HTML-верстальщика — это сфера обслуживания? Я создаю сайты, на которых люди могут найти, купить или продать услугу, товар или информацию. Что произойдет, если моя ошибка в вёрстке помешает пользователю получить, купить или продать услугу, товар и т.п.? Любой руководитель скажет, что это серьезная ошибка, и на её исправление бросит силы разработчика даже в выходные дни и среди ночи.</p>
+
+<p>Всё логично, но я в эту важность больше не верю. То есть верю, но не в то, что это делается ради удобства пользователей. Нет такой ошибки в моей работе, которая бы не потерпела, пока я не приду на работу утром. Потому что все ошибки вёрстки, по большому счету, такая ерунда. Потому что&hellip;</p>
+
+<p>Потому что талидомид.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/2009/12/08/talidomid/">Читать дальше &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/11/17/oskar-i-rozovaya-dama/">Оскар и Розовая Дама</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-17T13:19:24+02:00" pubdate data-updated="true">Вторник, 17 Ноября 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Невероятно, немыслимо, невозможно!</p>
+
+<p>Искренно, трогательно и пронзительно сыграла Алиса Фрейндлих в моноспектакле &ldquo;Оскар и Розовая Дама&rdquo; по пьесе Эрика-Эммануэля Шмитта.</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/2009/11/17/oskar-i-rozovaya-dama/">Читать дальше &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/11/14/pyotr-mamonov-u-lyubvi-est-odin-glagol-otdavat/">Пётр Мамонов: &#8220;У любви есть один глагол — отдавать&#8221;</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-14T21:43:05+02:00" pubdate data-updated="true">Суббота, 14 Ноября 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>По поводу премьеры фильма «Царь» Пётр Мамонов дал интервью газете «Труд»</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/2009/11/14/pyotr-mamonov-u-lyubvi-est-odin-glagol-otdavat/">Читать дальше &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/11/12/bolezn/">Болезнь</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-12T13:57:53+02:00" pubdate data-updated="true">Четверг, 12 Ноября 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Сколько раз я соблазнял коллег, которые выходили на работу в болезненном состоянии: &ldquo;Ходи домой, только представь, что тебя там ожидает — тусклый зашторенный свет, убаюкивающие объятия дивана, тихо урчащий на коленях ноутбук поверх старого, но любимого пледа в крупную клетку, аромат мёда дымком над чашкой темного стекла, а в ней в янтарно-лимонном напитке тихо позвякивает ложка, когда ты, боясь обжечься, едва касаешься губами гладкого края.&rdquo;</p>
+
+<p>Сегодня болею я. И только сейчас внезапно осознал, что ощущения от болезни не позволяют в полной мере наслаждаться домашним уютом. Как жаль. Пойду-ка, поплотнее завернусь в плед :)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/11/05/silence/">Лучше б молчали</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-05T23:24:52+02:00" pubdate data-updated="true">Четверг,  5 Ноября 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>В мультфильме &ldquo;Бемби&rdquo; есть обаятельный персонаж — заяц Топотун. Он несдержан и импульсивен, из-за чего порой говорит некорректности. Но при этом он искренен и неэгоистичен, что добавляет ему шарма. Папа-заяц учил его простому правилу: &ldquo;Если не можешь сказать что-то хорошее, лучше промолчи&rdquo;. То, что Топотун не научился этому правилу следовать, это не страшно — он же глупый зайчишка. Но как много людей вокруг не научились этому. Им интереснее перенять мерзкие манеры Грегори Хауса, чем брать пример с добрых сказочных персонажей?</p>
+
+<p>Лучше б молчали, ейбо.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/11/05/poziciya/">Позиция</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-05T23:09:58+02:00" pubdate data-updated="true">Четверг,  5 Ноября 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Прекрасный образец отстаивания своей позиции.
+Браво!</p>
+
+<blockquote><p>Я задаю конкретные вопросы, которые у меня возникли.
+Вы ни на один из них не дали ответа, но настойчиво пытаетесь мне объяснить, что я не имею права интересоваться.</p></blockquote>
+
+<p>Я Вашу точку зрения понял, спасибо.
+Вопросы, тем не менее, у меня остались.</p>
+
+<p>Источник: <a href="http://dolboeb.livejournal.com/1640818.html?thread=78492530#t78492530">http://dolboeb.livejournal.com/1640818.html?thread=78492530#t78492530</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/11/03/sergej-chikuenok-zen-coding-v0-5/">Сергей Чикуенок. Zen Coding v0.5</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-03T12:15:53+02:00" pubdate data-updated="true">Вторник,  3 Ноября 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://vimeo.com/7405114">http://vimeo.com/7405114</a></p>
+
+<p>Это просто волшебство. Еще в начале зимы это был невероятный концепт от Вадима Макеева &ndash; прекрасная, и как мне казалось, трудно реализуемая идея. Основная идея &ndash; написание HTML с использованием CSS-like selectors. А сейчас это уже отлаженная реализация, которая потрясает своими возможностями.</p>
+
+<p>Например, для меня неожиданностью стали такие возможности (в скобках время описания этой фичи в видеоролике):</p>
+
+<ol>
+<li><p> создание элементов с упорядоченным именованием [0:40]</p></li>
+<li><p> встраивание в CSS-like selector любых заранее созданных снипетов (в IntelliJIDEA это называется LiveTemplates) [1:18]</p></li>
+<li><p> оборачивание фрагмента кода с синтаксисом Zen Coding (не просто обернуть тегом <code>div</code>, а, например, обернуть фрагментом кода <code>div#wpar&gt;div#wrap-inner</code> и даже больше &ndash; надстройка новых узлов, предшествующих не только обертываемому блоку, а любому его родителю<code>div#header+div#page&gt;div#wpar&gt;div#wrap-inner</code> — крутизна!) [2:15]</p></li>
+<li><p> оборачивание каждой строки выделенного фрагмента однотипными элементами, прям как в MS Word, при этом используются возможности предыдущего пункта &ndash; вообще крутизна!  [3:33]</p></li>
+<li><p> возможность использовать не только вызов статических снипетов, как в пункте 2, а применять к ним операторы множения и создания родственных осей [4:21]</p></li>
+<li><p> возможность в этих снипетах кастомизировать имена CSS-классов и ID, как и в обычных элементах [5:24]</p></li>
+</ol>
+
+
+<p>Вадиму Макееву и Сергею Чикуенку выражаю свой восторг идеей и отменной реализацией. Парни, вы молодцы!</p>
+
+<p>PS Если я неправильно просклонял фамилию Сергея, прошу простить и подсказать, как правильно — я исправлю :)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/11/02/ie-rgba/">IE и Rgba</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-02T13:20:33+02:00" pubdate data-updated="true">Понедельник,  2 Ноября 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Вслед за Женей, учусь новому.
+<a href="http://bolknote.ru/2009/11/01/~2299">http://bolknote.ru/2009/11/01/~2299</a></p>
+
+<p>Женя удивился, а вслед за ним, удивился и я. Сколько лет назад командой разработки MSIE были придуманы разные клевые штуки, облегчающие разработку. И многие из них всё еще не предложены нам от W3C.</p>
+
+<p>Сегодня, благодаря этому новому знанию, я понял как решить две труднорешаемые задачи. Издавна, чтобы сделать фон блока полупрозрачным, мы вынуждены были использовать или png-24 картинку в фоне или opacity-свойство. Но в случае с png-24, для ИЕ6 нужно писать AlphaImageLoader фильтр, который катастрофически замедляет рендеринг страницы. А в случае с opacity приходилось придумывать трюки, чтобы дети блока не бледнели от родительского opacity.</p>
+
+<p>А теперь проблему opacity можно забыть, как страшный сон:</p>
+
+<pre><code>.block
+{
+    background: #rgba
+}
+* html .block
+{
+    filter:progid:DXImageTransform.Microsoft.gradient (startColorstr=#99000000, endColorstr=#99000000);
+}
+</code></pre>
+
+<p>В начальной и конечной позиции один и тот же RGB (000000) и добавляю перед ним одно и то же значение Alpha (99)
+Значение Alpha указывается в 16-тиричной системе, где 00 &ndash; полностью прозрачный, а ff &ndash; непрозрачный пиксел</p>
+
+<p>Я протестировал скорость рендеринга страницы, на которой выливается 300 элементов с gradient-фильтром — он не замедляет рендеринг и это сильно радует</p>
+
+<p>Но этот случай описывает ситуацию, когда нужно сделать однотонный полупрозрачный цвет, как например в модальных диалогах, когда вся остальная страница затемняется.</p>
+
+<p><img src="http://makishvili.com/images/post/2009-11-02-ie-rgba/modal.png" alt="" /></p>
+
+<p>Иногда использовать png-24 всё-таки необходимо, как например в случае, когда нужно обрезать длинную неразрывную строку, уводя ее градиентом в непрозрачность.</p>
+
+<p><img src="http://makishvili.com/images/post/2009-11-02-ie-rgba/fade.png" alt="" /></p>
+
+<p>В этом случае можно использовать второй способ.</p>
+
+<pre><code>.block
+{
+    background: url(image.png)
+}
+* html .block
+{
+    filter:progid:DXImageTransform.Microsoft.gradient (startColorstr=#00ffffff, endColorstr=#ffffffff, GradientType=1);
+}
+</code></pre>
+
+<p>GradientType принимает значение 1, если градиент рисуется слева-направо; и 0, если градиент сверху-вниз.</p>
+
+<p>MSIE хороший браузер.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/page/5/">&larr; Назад</a>
+    
+    <a href="/blog/archives">Все записи</a>
+    
+    <a class="next" href="/page/3/">Вперёд &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2014/03/11/print-and-go/">Распечатай Яндекс.Карты</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/26/pelageya/">Пелагея и Дарья Мороз &#8220;Ой, да не вечер&#8221;</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/12/28/vechernyaya-zastolnaya/">Вечерняя застольная</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/prostoj-sposob-vyyavit-svoi-glubinnye-straxi/">Простой способ выявить свои глубинные страхи</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/09/12/dyshi/">Дыши</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Вадим Макишвили -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Сергей Чикуенок. Zen Coding v0.5 - Вадим Макишвили</title>
+  <meta name="author" content="Вадим Макишвили">
+
+  
+  <meta name="description" content="http://vimeo.com/7405114 Это просто волшебство. Еще в начале зимы это был невероятный концепт от Вадима Макеева &ndash; прекрасная, и как мне &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://makishvili.com/2009/11/03/sergej-chikuenok-zen-coding-v0-5">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Вадим Макишвили" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+  <style>
+      pre {text-align: left;}
+  </style>
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Вадим Макишвили</a></h1>
+  
+    <h2>Вглядываясь в смыслы</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:makishvili.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Главная</a></li>
+  <li><a href="/category/presentation">Презентации</a></li>
+  <li><a href="/books">Повести</a></li>
+  <li><a href="/blog/archives">Архив</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Сергей Чикуенок. Zen Coding v0.5</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-03T12:15:53+02:00" pubdate data-updated="true">Вторник,  3 Ноября 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><a href="http://vimeo.com/7405114">http://vimeo.com/7405114</a></p>
+
+<p>Это просто волшебство. Еще в начале зимы это был невероятный концепт от Вадима Макеева &ndash; прекрасная, и как мне казалось, трудно реализуемая идея. Основная идея &ndash; написание HTML с использованием CSS-like selectors. А сейчас это уже отлаженная реализация, которая потрясает своими возможностями.</p>
+
+<p>Например, для меня неожиданностью стали такие возможности (в скобках время описания этой фичи в видеоролике):</p>
+
+<ol>
+<li><p> создание элементов с упорядоченным именованием [0:40]</p></li>
+<li><p> встраивание в CSS-like selector любых заранее созданных снипетов (в IntelliJIDEA это называется LiveTemplates) [1:18]</p></li>
+<li><p> оборачивание фрагмента кода с синтаксисом Zen Coding (не просто обернуть тегом <code>div</code>, а, например, обернуть фрагментом кода <code>div#wpar&gt;div#wrap-inner</code> и даже больше &ndash; надстройка новых узлов, предшествующих не только обертываемому блоку, а любому его родителю<code>div#header+div#page&gt;div#wpar&gt;div#wrap-inner</code> — крутизна!) [2:15]</p></li>
+<li><p> оборачивание каждой строки выделенного фрагмента однотипными элементами, прям как в MS Word, при этом используются возможности предыдущего пункта &ndash; вообще крутизна!  [3:33]</p></li>
+<li><p> возможность использовать не только вызов статических снипетов, как в пункте 2, а применять к ним операторы множения и создания родственных осей [4:21]</p></li>
+<li><p> возможность в этих снипетах кастомизировать имена CSS-классов и ID, как и в обычных элементах [5:24]</p></li>
+</ol>
+
+
+<p>Вадиму Макееву и Сергею Чикуенку выражаю свой восторг идеей и отменной реализацией. Парни, вы молодцы!</p>
+
+<p>PS Если я неправильно просклонял фамилию Сергея, прошу простить и подсказать, как правильно — я исправлю :)</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<!-- <span class="byline author vcard">Posted by <span class="fn">makishvili</span></span> -->
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-03T12:15:53+02:00" pubdate data-updated="true">Вторник,  3 Ноября 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/category/tech/'>tech</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://makishvili.com/2009/11/03/sergej-chikuenok-zen-coding-v0-5/" data-via="" data-counturl="http://makishvili.com/2009/11/03/sergej-chikuenok-zen-coding-v0-5/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2009/11/02/ie-rgba/" title="Previous Post: IE и rgba">&laquo; IE и rgba</a>
+      
+      
+        <a class="basic-alignment right" href="/2009/11/05/poziciya/" title="Next Post: Позиция">Позиция &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2014/03/11/print-and-go/">Распечатай Яндекс.Карты</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/26/pelageya/">Пелагея и Дарья Мороз "Ой, да не вечер"</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/12/28/vechernyaya-zastolnaya/">Вечерняя застольная</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/prostoj-sposob-vyyavit-svoi-glubinnye-straxi/">Простой способ выявить свои глубинные страхи</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/09/12/dyshi/">Дыши</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Вадим Макишвили -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

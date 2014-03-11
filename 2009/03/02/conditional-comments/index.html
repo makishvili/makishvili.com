@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Conditional Comments - Вадим Макишвили</title>
+  <meta name="author" content="Вадим Макишвили">
+
+  
+  <meta name="description" content="Казалось бы, что нового я могу Вам рассказать на эту тему? Ничего, — скажете Вы, — и будете абсолютно правы.
+А я Вам не про сами CC расскажу, а про &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://makishvili.com/2009/03/02/conditional-comments">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Вадим Макишвили" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+  <style>
+      pre {text-align: left;}
+  </style>
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Вадим Макишвили</a></h1>
+  
+    <h2>Вглядываясь в смыслы</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:makishvili.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Главная</a></li>
+  <li><a href="/category/presentation">Презентации</a></li>
+  <li><a href="/books">Повести</a></li>
+  <li><a href="/blog/archives">Архив</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Conditional Comments</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-03-02T12:15:23+02:00" pubdate data-updated="true">Понедельник,  2 Марта 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Казалось бы, что нового я могу Вам рассказать на эту тему? Ничего, — скажете Вы, — и будете абсолютно правы.
+А я Вам не про сами CC расскажу, а про то, как мы их используем для подключения стилей.</p>
+
+<p>Итак, как мы подключаем стили в проект и какие задачи при этом решаем?</p>
+
+<ol>
+<li><p>Сделать так, чтобы стили приходили <strong>минимизированые</strong> — экономим трафик пользователя и нашей компании</p></li>
+<li><p>Сделать так, чтобы IE-шные <strong>костыли</strong> выливались <strong>только для IE</strong> — решаем проблему валидности кода</p></li>
+<li><p>Сделать так, чтобы они выливались пользователю <strong>минимальным количеством http-запросов</strong> — решаем проблему скорости передачи данных с сервера.</p></li>
+</ol>
+
+
+<p>Первые два пункта вообще тривиальны, говорить о них <strong>мне</strong> уже поздно. Много сказано до меня :)
+Хочется поговорить о 3-ем.<!-- more --></p>
+
+<h2>Ещё полтора года назад мы загружали стили проекта так:</h2>
+
+<pre><code>&lt;link rel="stylesheet" href="project.css" /&gt;
+&lt;!--[if lte IE 7]&gt;&lt;link rel=stylesheet href="project.ie.css" /&gt;&lt;![endif]--&gt;
+</code></pre>
+
+<p>Суть решения: <code>project.css</code>  содержит в себе все необходимые (&ldquo;основные&rdquo;) селекторы, а в <code>project.ie.css</code> только костыли для IE, которые дополняют/переопределяют селекторы основного файла.</p>
+
+<p>И если предположить, что файлы <code>project*.css</code> перед отдачей клиенту проходят минимизацию (удаление пробельных символов, переводов строк и комментариев), то вышеописанный код решает 2 задачи из 3.</p>
+
+<h2>Почему не 3?</h2>
+
+<p>Потому что в IE7 и ниже происходит два запроса — к <code>project.css</code> и <code>project.ie.css</code>. То есть лишний запрос. А это означает лишние байты на передаче заголовков, лишнее время ожидания. И ведь, не бог весть какие затраты. Вполне можно закрыть глаза на это?</p>
+
+<p>Можно, &ldquo;если вас не интересует результат&rdquo; (с) М.М. Жванецкий ;&ndash;)
+Если мы разрабатываем какой-то нагруженный ресурс, на который ожидается большой поток пользователей ежеминутно (!), то лишние 200 байтов запроса на один запрос превращаются в многие минуты ожидания получения данных от сервера в суточном масштабе.</p>
+
+<p><strong>Да и вообще, если есть способ отдавать байт меньше, почему это не делать?</strong></p>
+
+<h2>Элегантное решение</h2>
+
+<p>Видимо, это очень хорошо понимал <a href="http://alexeyten.moikrug.ru/">Алексей Тен</a>, когда на  ClientSide2007 после доклада <a href="http://vitaly.harisov.name">Витали Харисова</a> он рассказал, что существует известный элегантный способ отдавать IE один файл вместо двух. Вот что Алексей предложил:</p>
+
+<pre><code>&lt;!--[if !IE]&gt;--&gt;&lt;link rel="stylesheet" href="project.css" /&gt;&lt;!--&lt;![endif]--&gt;
+&lt;!--[if IE]&gt;&lt;link rel=stylesheet href="project.ie.css" /&gt;&lt;![endif]--&gt;
+</code></pre>
+
+<p>И в начале файла <code>project.ie.css</code> пишется импорт <code>project.css</code>. Этим решается проблема копипаста &ldquo;основных&rdquo; селекторов в ie-шный файл.</p>
+
+<pre><code>@import url(project.css);
+</code></pre>
+
+<h2>Как MSIE читает эти CC</h2>
+
+<p>В первой строке он встречает условный комментарий <code>[if !IE]</code>, который понимает однозначно: &ldquo;Мне нет дела до всего, что написано дальше до закрывающего <code>[endif]</code>&rdquo;.</p>
+
+<p>Во второй строке он видит условный комментарий, который выполняется согласно условию <code>[if IE]</code>.</p>
+
+<p>Обратите внимание на то, что правильный CC (неважно, с каким условием) начинается такой конструкцией:</p>
+
+<pre><code>&lt;!--[if !IE]&gt;
+</code></pre>
+
+<p>А у нас он записан c дополнительными символами <code>--&gt;</code>:</p>
+
+<pre><code>&lt;!--[if !IE]&gt;--&gt;
+</code></pre>
+
+<p>Лишние символы для IE безразличны, потому что IE игнорирует всё внутри этого CC, а для остальных браузеров эти символы формируют завершённый комментарий, благодаря чему все браузеры видят тег <code>&lt;link&gt;</code> и выполняют запрос к стилевому файлу.</p>
+
+<p>Остроумный способ. Лёша, спасибо тебе за идею ;&ndash;)</p>
+
+<h2>Но на этом хитрости не закончились.</h2>
+
+<p>На горизонте замаячил IE8, в котором Microsoft пообещал полную поддержку CSS2.1.
+Кстати, Вы верите? А мы, знаете ли, решили поверить. Но опыт общения с продуктами Microsoft заставляет следовать поговорке &ldquo;доверяй, но проверяй&rdquo;. Поэтому мы, на всякий случай, подстелили <a href="http://pepelsbey.net/2008/08/im-not-coward-but-hell/">соломку</a>, спасибо <a href="http://pepelsbey.net">Вадиму</a> за светлую мысль.</p>
+
+<p>Как результат веры в IE8, в группе HTML-верстки было принято решение разделять загрузку стилей не по схеме <strong>«IE/неIE»</strong>, а по факту <strong>«поддерживаются стандарты или нет»</strong>.</p>
+
+<p>Мы договорились о такой классификации:</p>
+
+<ol>
+<li><p> Браузеры с поддержкой стандартов <em>Firefox/Safari/Opera/Chrome/<strong>MSIE8</strong></em></p></li>
+<li><p> Браузеры без поддержки стандартов <em>MSIE 5-6-7</em></p></li>
+</ol>
+
+
+<p>Как следует из классификации, мы поверили Microsoft на слово и отнесли IE8 к разряду &ldquo;стандартных&rdquo; браузеров, несмотря на то, что все существующие версии IE сейчас являются тем камнем, который тянет Web на дно. Правда, за полгода существования IE8 beta мы пару раз уже встречали странноватые баги в реализации CSS, но мы продолжаем верить. Очень хочется, просто :)</p>
+
+<h2>Как изменилась схема подключения?</h2>
+
+<p>Виталя взял идею, о которой рассказал Лёша, и модифицировал в такую:</p>
+
+<pre><code>&lt;!--[if gt IE 7]&gt;&lt;!--&gt;&lt;link rel="stylesheet" href="project.css"/&gt;&lt;!--&lt;![endif]--&gt;
+&lt;!--[if lt IE 8]&gt;&lt;link rel=stylesheet href="project.ie.css"&gt;&lt;![endif]--&gt;
+</code></pre>
+
+<p>По-прежнему, первая строка выполняется браузерами первой группы (включая MSIE8), вторая строка — браузерами второй группы.
+И снова задача &ldquo;один браузер — один http-запрос к стилям&rdquo; решена элегантно.</p>
+
+<p>Внимательный читатель, конечно же, обратил внимание, что в первой строке есть какая-то странность?
+В схеме Лёши было сказано:</p>
+
+<pre><code>&lt;!--[if !IE]&gt;--&gt;
+</code></pre>
+
+<p>А в схеме Витали:</p>
+
+<pre><code>&lt;!--[if gt IE 7]&gt;&lt;!--&gt;
+</code></pre>
+
+<p>Зачем писать лишние символы <code>&lt;!</code>, можно прочитать <a href="http://blog.ad.by/2008/07/advanced-conditional-comments-in-ie.html">по-русски</a>, или <a href="http://msdn.microsoft.com/en-us/library/ms537512.aspx#ctl00_rs1_WikiContent_ctl03_Container">по-английски</a> прямо на msdn-е.</p>
+
+<p>Вот теперь задача №3 может считаться не только выполненной, но и выполненной &ldquo;на перспективу&rdquo;. То есть, когда (а когда-то ведь это произойдет) IE8 вытеснит своих предшествеников, мы быстро и очень &ldquo;дёшево&rdquo; оторвем довески для глючных IE 5-7 и забудем хаки, как страшный сон.</p>
+
+<p><strong>PS</strong> Неужели, это свершится на моем веку? <em>подняв глаза к небу</em></p>
+
+<p><strong>PPS</strong> Описанная схема широко внедрена в Яндекс.Проекты и показала свою боеспособность. Можно пользоваться. Как говорит мой знакомый продавец овощей: &ldquo;Покупай, картошка без проблем&rdquo; ;&ndash;)</p>
+
+<p>Не исключено, что Вы <strong>эту же</strong> схему придумали сами, независимо от Яндекса. В таком случае, жму Вашу руку за сообразительность и Светлые Идеи :)</p>
+
+<p><strong>Update</strong>
+Как справедливо заметили <a href="http://engelside.net/">Ольга</a> и <a href="http://smmurf.ya.ru">Антон</a>, директива <code>@import url(project.css);</code> в файле <code>project.css</code> выполняет в браузере тот самый http-запрос, который мы стремимся избежать.
+Да, во время разработки так и происходит — на сервер ходят лишние запросы и это не важно. И только когда мы выкладываем проект в production, мы осуществляем мероприятия по оптимизации CSS.</p>
+
+<p>Фокус в том, что для production мы <strong>собираем</strong> стили. У нас есть перловый скрипт, который запускается на момент сборки production-версии. Он заглядывает в каждый CSS-файл, находит в нем директиву импорта и вместо нее подставляет код из файла, на который этот импорт смотрит. В результате получаем два файла <code>project.css</code> и <code>project.ie.css</code>, внутри которых уже нет ни одного импорта.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<!-- <span class="byline author vcard">Posted by <span class="fn">makishvili</span></span> -->
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-03-02T12:15:23+02:00" pubdate data-updated="true">Понедельник,  2 Марта 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/category/tech/'>tech</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://makishvili.com/2009/03/02/conditional-comments/" data-via="" data-counturl="http://makishvili.com/2009/03/02/conditional-comments/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2009/02/24/vostorg/" title="Previous Post: Восторг">&laquo; Восторг</a>
+      
+      
+        <a class="basic-alignment right" href="/2009/03/11/fidy/" title="Next Post: Фиды">Фиды &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2014/03/11/print-and-go/">Распечатай Яндекс.Карты</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2013/02/26/pelageya/">Пелагея и Дарья Мороз "Ой, да не вечер"</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/12/28/vechernyaya-zastolnaya/">Вечерняя застольная</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/10/14/prostoj-sposob-vyyavit-svoi-glubinnye-straxi/">Простой способ выявить свои глубинные страхи</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2011/09/12/dyshi/">Дыши</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Вадим Макишвили -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
