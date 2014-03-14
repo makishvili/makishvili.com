@@ -4,7 +4,7 @@
   <title><![CDATA[Life | Вадим Макишвили]]></title>
   <link href="http://makishvili.com/makishvili/category/life/atom.xml" rel="self"/>
   <link href="http://makishvili.com/makishvili/"/>
-  <updated>2014-03-15T01:17:22+02:00</updated>
+  <updated>2014-03-15T01:22:21+02:00</updated>
   <id>http://makishvili.com/makishvili/</id>
   <author>
     <name><![CDATA[Вадим Макишвили]]></name>
@@ -18,11 +18,11 @@
     <link href="http://makishvili.com/makishvili/2013/02/26/pelageya/"/>
     <updated>2013-02-26T13:38:22+02:00</updated>
     <id>http://makishvili.com/makishvili/2013/02/26/pelageya</id>
-    <content type="html"><![CDATA[<p>{% youtube l1TzJm1BD2I %}</p>
+    <content type="html"><![CDATA[<p><iframe width="745" height="559" src="http://www.youtube.com/embed/l1TzJm1BD2I" frameborder="0" allowfullscreen></iframe></p>
 
 <p>А вот мужское исполнение. Ох, сильно как.</p>
 
-<p>{% youtube OiiaY9iRaAM %}</p>
+<p><iframe width="745" height="559" src="http://www.youtube.com/embed/OiiaY9iRaAM" frameborder="0" allowfullscreen></iframe></p>
 ]]></content>
   </entry>
   
@@ -31,7 +31,7 @@
     <link href="http://makishvili.com/makishvili/2011/12/28/vechernyaya-zastolnaya/"/>
     <updated>2011-12-28T00:29:46+02:00</updated>
     <id>http://makishvili.com/makishvili/2011/12/28/vechernyaya-zastolnaya</id>
-    <content type="html"><![CDATA[<p>{% youtube oi9oBKyzCF4 %}</p>
+    <content type="html"><![CDATA[<p><iframe width="745" height="559" src="http://www.youtube.com/embed/oi9oBKyzCF4" frameborder="0" allowfullscreen></iframe></p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Без рубрики | Вадим Макишвили]]></title>
   <link href="http://makishvili.com/makishvili/category/biez-rubriki/atom.xml" rel="self"/>
   <link href="http://makishvili.com/makishvili/"/>
-  <updated>2014-03-15T01:17:22+02:00</updated>
+  <updated>2014-03-15T01:22:21+02:00</updated>
   <id>http://makishvili.com/makishvili/</id>
   <author>
     <name><![CDATA[Вадим Макишвили]]></name>
@@ -29,7 +29,7 @@
     <id>http://makishvili.com/makishvili/2011/06/08/crash-paul-haggis</id>
     <content type="html"><![CDATA[<p>Пяти минут достаточно, чтобы захотеть увидеть фильм целиком.</p>
 
-<p>{% yavideo makishvili/0s03d6lr7o.1410 %}</p>
+<p><iframe width="745" height="559" frameborder="0" src="http://video.yandex.ru/iframe/makishvili/0s03d6lr7o.1410/"></iframe></p>
 
 <p>Посмотрите отрывок, он не спойлит ничего.
 В фильме несколько сюжетных линий,  фильм &ndash; это и есть эти линии. В нём не надо ждать кульминацию &ndash; каждая сцена сама по себе кульминация размышлений автора.</p>

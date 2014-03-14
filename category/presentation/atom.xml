@@ -4,7 +4,7 @@
   <title><![CDATA[Presentation | Вадим Макишвили]]></title>
   <link href="http://makishvili.com/makishvili/category/presentation/atom.xml" rel="self"/>
   <link href="http://makishvili.com/makishvili/"/>
-  <updated>2014-03-15T01:17:22+02:00</updated>
+  <updated>2014-03-15T01:22:21+02:00</updated>
   <id>http://makishvili.com/makishvili/</id>
   <author>
     <name><![CDATA[Вадим Макишвили]]></name>
@@ -18,7 +18,7 @@
     <link href="http://makishvili.com/makishvili/2014/03/11/print-and-go/"/>
     <updated>2014-03-11T14:24:22+02:00</updated>
     <id>http://makishvili.com/makishvili/2014/03/11/print-and-go</id>
-    <content type="html"><![CDATA[<p>{% yavideo fronttalks/k68do4knis.4907 %}</p>
+    <content type="html"><![CDATA[<p><iframe width="745" height="559" frameborder="0" src="http://video.yandex.ru/iframe/fronttalks/k68do4knis.4907/"></iframe></p>
 ]]></content>
   </entry>
   
@@ -27,7 +27,7 @@
     <link href="http://makishvili.com/makishvili/2010/12/31/errare/"/>
     <updated>2010-12-31T00:59:38+02:00</updated>
     <id>http://makishvili.com/makishvili/2010/12/31/errare</id>
-    <content type="html"><![CDATA[<p>{% yavideo makishvili/z9jb1fdmgq.2608 %}
+    <content type="html"><![CDATA[<p><iframe width="745" height="559" frameborder="0" src="http://video.yandex.ru/iframe/makishvili/z9jb1fdmgq.2608/"></iframe>
 РИТ 2010, Москва</p>
 ]]></content>
   </entry>
@@ -45,7 +45,7 @@
 </ul>
 
 
-<p>{% yavideo makishvili/8qnismzvus.211 %}</p>
+<p><iframe width="745" height="559" frameborder="0" src="http://video.yandex.ru/iframe/makishvili/8qnismzvus.211/"></iframe></p>
 
 <p>К сожалению, освещение сцены оказалось недостаточно хорошим, поэтому видео-запись местами получилась темной. Но к несомненным плюсам относится то, что запись велась с двух камер, а потом монтировалась со вставками слайдов в хорошем качестве.</p>
 
