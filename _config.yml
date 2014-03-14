@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://makishvili.com
+url: http://makishvili.com/makishvili
 title: Вадим Макишвили
 subtitle: Вглядываясь в смыслы
 author: Вадим Макишвили
@@ -91,7 +91,7 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: makishvili.com
 disqus_show_comment_count: false
 
 # Google Analytics
