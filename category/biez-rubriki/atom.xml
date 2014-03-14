@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Без рубрики | Вадим Макишвили]]></title>
-  <link href="http://makishvili.com/category/biez-rubriki/atom.xml" rel="self"/>
-  <link href="http://makishvili.com/"/>
-  <updated>2014-03-11T23:08:23+02:00</updated>
-  <id>http://makishvili.com/</id>
+  <link href="http://makishvili.com/makishvili/category/biez-rubriki/atom.xml" rel="self"/>
+  <link href="http://makishvili.com/makishvili/"/>
+  <updated>2014-03-15T01:17:22+02:00</updated>
+  <id>http://makishvili.com/makishvili/</id>
   <author>
     <name><![CDATA[Вадим Макишвили]]></name>
     
@@ -15,21 +15,21 @@
   
   <entry>
     <title type="html"><![CDATA[Простой способ выявить свои глубинные страхи]]></title>
-    <link href="http://makishvili.com/2011/10/14/prostoj-sposob-vyyavit-svoi-glubinnye-straxi/"/>
+    <link href="http://makishvili.com/makishvili/2011/10/14/prostoj-sposob-vyyavit-svoi-glubinnye-straxi/"/>
     <updated>2011-10-14T10:58:48+03:00</updated>
-    <id>http://makishvili.com/2011/10/14/prostoj-sposob-vyyavit-svoi-glubinnye-straxi</id>
+    <id>http://makishvili.com/makishvili/2011/10/14/prostoj-sposob-vyyavit-svoi-glubinnye-straxi</id>
     <content type="html"><![CDATA[<p><a href="http://mineevaelena.ru/mysli_vsluh/prostoj-sposob-vyyavit-svoi-glubinnye-straxi/">Читать статью Елены Минеевой</a></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Столкновение (фильм Пола Хэггиса)]]></title>
-    <link href="http://makishvili.com/2011/06/08/crash-paul-haggis/"/>
+    <link href="http://makishvili.com/makishvili/2011/06/08/crash-paul-haggis/"/>
     <updated>2011-06-08T22:02:58+03:00</updated>
-    <id>http://makishvili.com/2011/06/08/crash-paul-haggis</id>
+    <id>http://makishvili.com/makishvili/2011/06/08/crash-paul-haggis</id>
     <content type="html"><![CDATA[<p>Пяти минут достаточно, чтобы захотеть увидеть фильм целиком.</p>
 
-<p><iframe width="745" height="559" frameborder="0" src="http://video.yandex.ru/iframe/makishvili/0s03d6lr7o.1410/"></iframe></p>
+<p>{% yavideo makishvili/0s03d6lr7o.1410 %}</p>
 
 <p>Посмотрите отрывок, он не спойлит ничего.
 В фильме несколько сюжетных линий,  фильм &ndash; это и есть эти линии. В нём не надо ждать кульминацию &ndash; каждая сцена сама по себе кульминация размышлений автора.</p>
@@ -40,9 +40,9 @@
   
   <entry>
     <title type="html"><![CDATA[John Q]]></title>
-    <link href="http://makishvili.com/2011/02/15/john-q/"/>
+    <link href="http://makishvili.com/makishvili/2011/02/15/john-q/"/>
     <updated>2011-02-15T17:44:05+02:00</updated>
-    <id>http://makishvili.com/2011/02/15/john-q</id>
+    <id>http://makishvili.com/makishvili/2011/02/15/john-q</id>
     <content type="html"><![CDATA[<p>На что ради ребенка способен ты?</p>
 
 <p>&ldquo;John Q&rdquo; — фильм 2002 года режиссёра Ника Кассаветиса.
@@ -52,9 +52,9 @@
   
   <entry>
     <title type="html"><![CDATA[Филип Сеймур Хоффман]]></title>
-    <link href="http://makishvili.com/2010/11/19/filip-sejmur-xoffman/"/>
+    <link href="http://makishvili.com/makishvili/2010/11/19/filip-sejmur-xoffman/"/>
     <updated>2010-11-19T09:45:36+02:00</updated>
-    <id>http://makishvili.com/2010/11/19/filip-sejmur-xoffman</id>
+    <id>http://makishvili.com/makishvili/2010/11/19/filip-sejmur-xoffman</id>
     <content type="html"><![CDATA[<blockquote><p><strong>Слава постепенно лишает тебя сомнений.</strong> И это самое страшное, что она может с тобой сделать.</p></blockquote>
 
 <p>esquire.ru</p>
@@ -63,9 +63,9 @@
   
   <entry>
     <title type="html"><![CDATA[IE и Rgba]]></title>
-    <link href="http://makishvili.com/2009/11/02/ie-rgba/"/>
+    <link href="http://makishvili.com/makishvili/2009/11/02/ie-rgba/"/>
     <updated>2009-11-02T13:20:33+02:00</updated>
-    <id>http://makishvili.com/2009/11/02/ie-rgba</id>
+    <id>http://makishvili.com/makishvili/2009/11/02/ie-rgba</id>
     <content type="html"><![CDATA[<p>Вслед за Женей, учусь новому.
 <a href="http://bolknote.ru/2009/11/01/~2299">http://bolknote.ru/2009/11/01/~2299</a></p>
 
