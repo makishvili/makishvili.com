@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Presentation | Вадим Макишвили]]></title>
-  <link href="http://makishvili.com/makishvili/category/presentation/atom.xml" rel="self"/>
-  <link href="http://makishvili.com/makishvili/"/>
-  <updated>2014-03-15T01:22:21+02:00</updated>
-  <id>http://makishvili.com/makishvili/</id>
+  <link href="http://makishvili.com/category/presentation/atom.xml" rel="self"/>
+  <link href="http://makishvili.com/"/>
+  <updated>2014-03-15T02:01:11+02:00</updated>
+  <id>http://makishvili.com/</id>
   <author>
     <name><![CDATA[Вадим Макишвили]]></name>
     
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[Распечатай Яндекс.Карты]]></title>
-    <link href="http://makishvili.com/makishvili/2014/03/11/print-and-go/"/>
+    <link href="http://makishvili.com/2014/03/11/print-and-go/"/>
     <updated>2014-03-11T14:24:22+02:00</updated>
-    <id>http://makishvili.com/makishvili/2014/03/11/print-and-go</id>
+    <id>http://makishvili.com/2014/03/11/print-and-go</id>
     <content type="html"><![CDATA[<p><iframe width="745" height="559" frameborder="0" src="http://video.yandex.ru/iframe/fronttalks/k68do4knis.4907/"></iframe></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Ошибка. Осознание, анализ, извлечение пользы]]></title>
-    <link href="http://makishvili.com/makishvili/2010/12/31/errare/"/>
+    <link href="http://makishvili.com/2010/12/31/errare/"/>
     <updated>2010-12-31T00:59:38+02:00</updated>
-    <id>http://makishvili.com/makishvili/2010/12/31/errare</id>
+    <id>http://makishvili.com/2010/12/31/errare</id>
     <content type="html"><![CDATA[<p><iframe width="745" height="559" frameborder="0" src="http://video.yandex.ru/iframe/makishvili/z9jb1fdmgq.2608/"></iframe>
 РИТ 2010, Москва</p>
 ]]></content>
@@ -34,9 +34,9 @@
   
   <entry>
     <title type="html"><![CDATA[Вёрстка в IntelliJIDEA. Видео]]></title>
-    <link href="http://makishvili.com/makishvili/2009/02/17/verstka-v-intellijidea-video/"/>
+    <link href="http://makishvili.com/2009/02/17/verstka-v-intellijidea-video/"/>
     <updated>2009-02-17T11:29:13+02:00</updated>
-    <id>http://makishvili.com/makishvili/2009/02/17/verstka-v-intellijidea-video</id>
+    <id>http://makishvili.com/2009/02/17/verstka-v-intellijidea-video</id>
     <content type="html"><![CDATA[<p>Предлагаю Вашему вниманию видеозапись моей презентации &ldquo;Вёрстка в IntelliJIDEA&rdquo;, которая состоялась 31 января 2009 года на первом <a href="http://clubs.ya.ru/company/replies.xml?item_no=14661">Яндекс.Субботнике</a></p>
 
 <ul>

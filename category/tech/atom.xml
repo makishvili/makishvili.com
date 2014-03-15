@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tech | Вадим Макишвили]]></title>
-  <link href="http://makishvili.com/makishvili/category/tech/atom.xml" rel="self"/>
-  <link href="http://makishvili.com/makishvili/"/>
-  <updated>2014-03-15T01:22:21+02:00</updated>
-  <id>http://makishvili.com/makishvili/</id>
+  <link href="http://makishvili.com/category/tech/atom.xml" rel="self"/>
+  <link href="http://makishvili.com/"/>
+  <updated>2014-03-15T02:01:11+02:00</updated>
+  <id>http://makishvili.com/</id>
   <author>
     <name><![CDATA[Вадим Макишвили]]></name>
     
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[Распечатай Яндекс.Карты]]></title>
-    <link href="http://makishvili.com/makishvili/2014/03/11/print-and-go/"/>
+    <link href="http://makishvili.com/2014/03/11/print-and-go/"/>
     <updated>2014-03-11T14:24:22+02:00</updated>
-    <id>http://makishvili.com/makishvili/2014/03/11/print-and-go</id>
+    <id>http://makishvili.com/2014/03/11/print-and-go</id>
     <content type="html"><![CDATA[<p><iframe width="745" height="559" frameborder="0" src="http://video.yandex.ru/iframe/fronttalks/k68do4knis.4907/"></iframe></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Ошибка. Осознание, анализ, извлечение пользы]]></title>
-    <link href="http://makishvili.com/makishvili/2010/12/31/errare/"/>
+    <link href="http://makishvili.com/2010/12/31/errare/"/>
     <updated>2010-12-31T00:59:38+02:00</updated>
-    <id>http://makishvili.com/makishvili/2010/12/31/errare</id>
+    <id>http://makishvili.com/2010/12/31/errare</id>
     <content type="html"><![CDATA[<p><iframe width="745" height="559" frameborder="0" src="http://video.yandex.ru/iframe/makishvili/z9jb1fdmgq.2608/"></iframe>
 РИТ 2010, Москва</p>
 ]]></content>
@@ -34,9 +34,9 @@
   
   <entry>
     <title type="html"><![CDATA[Неуправляемый паддинг внутри Input]]></title>
-    <link href="http://makishvili.com/makishvili/2010/10/25/input-typesubmit-padding-bug-on-safari-mobile/"/>
+    <link href="http://makishvili.com/2010/10/25/input-typesubmit-padding-bug-on-safari-mobile/"/>
     <updated>2010-10-25T10:36:16+03:00</updated>
-    <id>http://makishvili.com/makishvili/2010/10/25/input-typesubmit-padding-bug-on-safari-mobile</id>
+    <id>http://makishvili.com/2010/10/25/input-typesubmit-padding-bug-on-safari-mobile</id>
     <content type="html"><![CDATA[<p>В мобильном Сафари внутри input появляется неуправляемый паддинг слева и справа от текста. <a href="http://stackoverflow.com/questions/3516651/input-typesubmit-padding-bug-on-safari-mobile">Прочитать</a> подробное описание проблемы.</p>
 
 <p>Решение — использовать button вместо input:</p>
@@ -55,9 +55,9 @@
   
   <entry>
     <title type="html"><![CDATA[ZenCoding CheatSheets and JetBrains WebStorm]]></title>
-    <link href="http://makishvili.com/makishvili/2010/02/19/zencoding-cheatsheets-and-jetbrains-webstorm/"/>
+    <link href="http://makishvili.com/2010/02/19/zencoding-cheatsheets-and-jetbrains-webstorm/"/>
     <updated>2010-02-19T10:38:42+02:00</updated>
-    <id>http://makishvili.com/makishvili/2010/02/19/zencoding-cheatsheets-and-jetbrains-webstorm</id>
+    <id>http://makishvili.com/2010/02/19/zencoding-cheatsheets-and-jetbrains-webstorm</id>
     <content type="html"><![CDATA[<h2>Справочник</h2>
 
 <p>На <a href="http://code.google.com/p/zen-coding/wiki/CheatSheets">странице проекта</a> появились читы.
@@ -83,9 +83,9 @@
   
   <entry>
     <title type="html"><![CDATA[Border-radius in Safari]]></title>
-    <link href="http://makishvili.com/makishvili/2010/01/28/border-radius-in-safari/"/>
+    <link href="http://makishvili.com/2010/01/28/border-radius-in-safari/"/>
     <updated>2010-01-28T13:50:33+02:00</updated>
-    <id>http://makishvili.com/makishvili/2010/01/28/border-radius-in-safari</id>
+    <id>http://makishvili.com/2010/01/28/border-radius-in-safari</id>
     <content type="html"><![CDATA[<p>В Safari столкнулся с неаккуратным рендерингом элемента, если ему задан  border-radius и  фоновый цвет. Увидеть проблему и её решение можно на <a href="http://makishvili.com/code/border-radius-in-safari.html">тестовой странице</a>.</p>
 
 <h2>Решение</h2>

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://makishvili.com/makishvili/sitemap.xml 
+Sitemap: http://makishvili.com/sitemap.xml 

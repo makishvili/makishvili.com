@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Вадим Макишвили]]></title>
-  <link href="http://makishvili.com/makishvili/atom.xml" rel="self"/>
-  <link href="http://makishvili.com/makishvili/"/>
-  <updated>2014-03-15T01:22:21+02:00</updated>
-  <id>http://makishvili.com/makishvili/</id>
+  <link href="http://makishvili.com/atom.xml" rel="self"/>
+  <link href="http://makishvili.com/"/>
+  <updated>2014-03-15T02:01:11+02:00</updated>
+  <id>http://makishvili.com/</id>
   <author>
     <name><![CDATA[Вадим Макишвили]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Распечатай Яндекс.Карты]]></title>
-    <link href="http://makishvili.com/makishvili/2014/03/11/print-and-go/"/>
+    <link href="http://makishvili.com/2014/03/11/print-and-go/"/>
     <updated>2014-03-11T14:24:22+02:00</updated>
-    <id>http://makishvili.com/makishvili/2014/03/11/print-and-go</id>
+    <id>http://makishvili.com/2014/03/11/print-and-go</id>
     <content type="html"><![CDATA[<iframe width="745" height="559" frameborder="0" src="http://video.yandex.ru/iframe/fronttalks/k68do4knis.4907/"></iframe>
 
 
@@ -27,9 +27,9 @@
   
   <entry>
     <title type="html"><![CDATA[Пелагея и Дарья Мороз "Ой, да не вечер"]]></title>
-    <link href="http://makishvili.com/makishvili/2013/02/26/pelageya/"/>
+    <link href="http://makishvili.com/2013/02/26/pelageya/"/>
     <updated>2013-02-26T13:38:22+02:00</updated>
-    <id>http://makishvili.com/makishvili/2013/02/26/pelageya</id>
+    <id>http://makishvili.com/2013/02/26/pelageya</id>
     <content type="html"><![CDATA[<iframe width="745" height="559" src="http://www.youtube.com/embed/l1TzJm1BD2I" frameborder="0" allowfullscreen></iframe>
 
 
@@ -44,9 +44,9 @@
   
   <entry>
     <title type="html"><![CDATA[Вечерняя застольная]]></title>
-    <link href="http://makishvili.com/makishvili/2011/12/28/vechernyaya-zastolnaya/"/>
+    <link href="http://makishvili.com/2011/12/28/vechernyaya-zastolnaya/"/>
     <updated>2011-12-28T00:29:46+02:00</updated>
-    <id>http://makishvili.com/makishvili/2011/12/28/vechernyaya-zastolnaya</id>
+    <id>http://makishvili.com/2011/12/28/vechernyaya-zastolnaya</id>
     <content type="html"><![CDATA[<iframe width="745" height="559" src="http://www.youtube.com/embed/oi9oBKyzCF4" frameborder="0" allowfullscreen></iframe>
 
 
@@ -56,18 +56,18 @@
   
   <entry>
     <title type="html"><![CDATA[Простой способ выявить свои глубинные страхи]]></title>
-    <link href="http://makishvili.com/makishvili/2011/10/14/prostoj-sposob-vyyavit-svoi-glubinnye-straxi/"/>
+    <link href="http://makishvili.com/2011/10/14/prostoj-sposob-vyyavit-svoi-glubinnye-straxi/"/>
     <updated>2011-10-14T10:58:48+03:00</updated>
-    <id>http://makishvili.com/makishvili/2011/10/14/prostoj-sposob-vyyavit-svoi-glubinnye-straxi</id>
+    <id>http://makishvili.com/2011/10/14/prostoj-sposob-vyyavit-svoi-glubinnye-straxi</id>
     <content type="html"><![CDATA[<p><a href="http://mineevaelena.ru/mysli_vsluh/prostoj-sposob-vyyavit-svoi-glubinnye-straxi/">Читать статью Елены Минеевой</a></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Дыши]]></title>
-    <link href="http://makishvili.com/makishvili/2011/09/12/dyshi/"/>
+    <link href="http://makishvili.com/2011/09/12/dyshi/"/>
     <updated>2011-09-12T22:44:05+03:00</updated>
-    <id>http://makishvili.com/makishvili/2011/09/12/dyshi</id>
+    <id>http://makishvili.com/2011/09/12/dyshi</id>
     <content type="html"><![CDATA[<p>— А про степных зверей мы прочитаем завтра.
 — Закладка-закладка?
 — Вот, положил.</p>
@@ -127,9 +127,9 @@
   
   <entry>
     <title type="html"><![CDATA[О графомании в психиатрии и литературе]]></title>
-    <link href="http://makishvili.com/makishvili/2011/09/06/o-grafomanii-v-literature/"/>
+    <link href="http://makishvili.com/2011/09/06/o-grafomanii-v-literature/"/>
     <updated>2011-09-06T10:04:00+03:00</updated>
-    <id>http://makishvili.com/makishvili/2011/09/06/o-grafomanii-v-literature</id>
+    <id>http://makishvili.com/2011/09/06/o-grafomanii-v-literature</id>
     <content type="html"><![CDATA[<p><strong>Медицинская вводная.</strong>
 Графомания — психически изменённое состояние, когда человек много и бессмысленно пишет. Пишет примерно так:</p>
 
@@ -218,18 +218,18 @@ _</p>
   
   <entry>
     <title type="html"><![CDATA["Знаки". Рассказ]]></title>
-    <link href="http://makishvili.com/makishvili/2011/08/15/signs/"/>
+    <link href="http://makishvili.com/2011/08/15/signs/"/>
     <updated>2011-08-15T22:18:05+03:00</updated>
-    <id>http://makishvili.com/makishvili/2011/08/15/signs</id>
+    <id>http://makishvili.com/2011/08/15/signs</id>
     <content type="html"><![CDATA[<p><a href="http://makishvili.com/books/signs.html">Читать</a></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Молчаливая Москва]]></title>
-    <link href="http://makishvili.com/makishvili/2011/08/09/molchalivaya-moskva/"/>
+    <link href="http://makishvili.com/2011/08/09/molchalivaya-moskva/"/>
     <updated>2011-08-09T21:05:58+03:00</updated>
-    <id>http://makishvili.com/makishvili/2011/08/09/molchalivaya-moskva</id>
+    <id>http://makishvili.com/2011/08/09/molchalivaya-moskva</id>
     <content type="html"><![CDATA[<p>Видел её разной &ndash; разудалой в кабаках, рукоплескающей в театрах, шоркающей по ледовым каткам, суетливой в торговых центрах. Сегодня увидел её молчаливой.<!-- more --> Она шелестела над головой сочной зеленью; прихрамывала с тросточкой, встречая меня в скверах; смотрела на меня с памятников серыми спокойными глазами. Тихая такая Москва, хорошая.</p>
 
 <p>Рядом с офисом <a href="http://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%BC%D0%BE%D1%80%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9-%D1%83%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0_%D0%9B._%D0%9D._%D0%A2%D0%BE%D0%BB%D1%81%D1%82%D0%BE%D0%B3%D0%BE_%C2%AB%D0%A5%D0%B0%D0%BC%D0%BE%D0%B2%D0%BD%D0%B8%D0%BA%D0%B8%C2%BB">усадьба</a> Льва Николаевича Толстого. Неприметная, даже непримечательная. Забор деревянный. Покрашен в кирпично-красный цвет. Тусклый и печальный, невыразительный рядом со Строгановским бизнес-центром с его японско-французско-ирландским великолепием вкусов. В паб люди идут, а в усадьбу нет.</p>
@@ -256,9 +256,9 @@ _</p>
   
   <entry>
     <title type="html"><![CDATA[Женя Степанищев]]></title>
-    <link href="http://makishvili.com/makishvili/2011/08/09/zhenya-stepanishhev/"/>
+    <link href="http://makishvili.com/2011/08/09/zhenya-stepanishhev/"/>
     <updated>2011-08-09T19:08:47+03:00</updated>
-    <id>http://makishvili.com/makishvili/2011/08/09/zhenya-stepanishhev</id>
+    <id>http://makishvili.com/2011/08/09/zhenya-stepanishhev</id>
     <content type="html"><![CDATA[<p>Сегодня случайно увиделся с Женей. Пожали руки, тепло по-дружески обнялись и попрощались.  Скорее всего, увиделись в последний раз. Оба это понимаем: где Казань, а где Симферополь :)</p>
 
 <p>Женя, пусть твой новый проект станет твоим новым большим успехом. А мы порадуемся за электронный документооборот в России.</p>
@@ -269,18 +269,18 @@ _</p>
   
   <entry>
     <title type="html"><![CDATA["Сандалики на тонком ремешке". Рассказ]]></title>
-    <link href="http://makishvili.com/makishvili/2011/07/25/kush/"/>
+    <link href="http://makishvili.com/2011/07/25/kush/"/>
     <updated>2011-07-25T23:16:49+03:00</updated>
-    <id>http://makishvili.com/makishvili/2011/07/25/kush</id>
+    <id>http://makishvili.com/2011/07/25/kush</id>
     <content type="html"><![CDATA[<p><a href="http://makishvili.com/books/kush.html">Прочитать</a></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Столкновение (фильм Пола Хэггиса)]]></title>
-    <link href="http://makishvili.com/makishvili/2011/06/08/crash-paul-haggis/"/>
+    <link href="http://makishvili.com/2011/06/08/crash-paul-haggis/"/>
     <updated>2011-06-08T22:02:58+03:00</updated>
-    <id>http://makishvili.com/makishvili/2011/06/08/crash-paul-haggis</id>
+    <id>http://makishvili.com/2011/06/08/crash-paul-haggis</id>
     <content type="html"><![CDATA[<p>Пяти минут достаточно, чтобы захотеть увидеть фильм целиком.</p>
 
 <iframe width="745" height="559" frameborder="0" src="http://video.yandex.ru/iframe/makishvili/0s03d6lr7o.1410/"></iframe>
@@ -295,9 +295,9 @@ _</p>
   
   <entry>
     <title type="html"><![CDATA[Вечное сияние чистого разума (фильм Мишеля Гондри)]]></title>
-    <link href="http://makishvili.com/makishvili/2011/03/15/eternal-sunshine/"/>
+    <link href="http://makishvili.com/2011/03/15/eternal-sunshine/"/>
     <updated>2011-03-15T11:45:32+02:00</updated>
-    <id>http://makishvili.com/makishvili/2011/03/15/eternal-sunshine</id>
+    <id>http://makishvili.com/2011/03/15/eternal-sunshine</id>
     <content type="html"><![CDATA[<p>Одного кадра достаточно, чтобы захотеть посмотреть фильм.</p>
 
 <p><img src="http://makishvili.com/images/post/2011-03-15-eternal-sunshine/eternal-sunshine.jpg" alt="" /></p>
@@ -308,9 +308,9 @@ _</p>
   
   <entry>
     <title type="html"><![CDATA[Моя Родина]]></title>
-    <link href="http://makishvili.com/makishvili/2011/02/24/moya-rodina/"/>
+    <link href="http://makishvili.com/2011/02/24/moya-rodina/"/>
     <updated>2011-02-24T11:15:31+02:00</updated>
-    <id>http://makishvili.com/makishvili/2011/02/24/moya-rodina</id>
+    <id>http://makishvili.com/2011/02/24/moya-rodina</id>
     <content type="html"><![CDATA[<p>Отчётливо понял, что не люблю Москву в выходной день. Я устаю здесь в выходной. Странно же быть в Москве в выходной и сидеть в гостинице? Иду на улицы, гуляю тротуарами, делаю приятные покупки для родных, рассматриваю красивости, отчаянно верчу головой, вбираю в себя, как губка, новые впечатления и образы чужого города. И с каждым часом устаю. Устаю как-то по-столичному, не той усталостью, что накатывает в конце трудовой недели дома.</p>
 
 <p>Ноги наливаются тяжестью, носки в ботинках вспотевают от смены температур в помещениях и на улице, сумка явственно оттягивает плечо и ближе к вечеру думаешь о тишине гостиничного номера, как о благодати. Так думает страждущий о глотке холодной воды. Стремишься быстрее преодолеть расстояние, добраться до ближайшей  станции метро, опуститься в вагоне на свободное место и закрыть глаза. А за закрытыми глазами мелькают чужие лица, чужие улицы и незнакомые, не ставшие родными, образы чужой жизни.  Устаю усталостью чужеземца, оторванного и готового плакать от внезапной любви к тому родному, что на время покинуто, но не забыто. К родному дому, родной семье, родному укладу жизни. К Родине.</p>
@@ -327,9 +327,9 @@ _</p>
   
   <entry>
     <title type="html"><![CDATA[John Q]]></title>
-    <link href="http://makishvili.com/makishvili/2011/02/15/john-q/"/>
+    <link href="http://makishvili.com/2011/02/15/john-q/"/>
     <updated>2011-02-15T17:44:05+02:00</updated>
-    <id>http://makishvili.com/makishvili/2011/02/15/john-q</id>
+    <id>http://makishvili.com/2011/02/15/john-q</id>
     <content type="html"><![CDATA[<p>На что ради ребенка способен ты?</p>
 
 <p>&ldquo;John Q&rdquo; — фильм 2002 года режиссёра Ника Кассаветиса.
@@ -339,9 +339,9 @@ _</p>
   
   <entry>
     <title type="html"><![CDATA["Холодно". Повесть]]></title>
-    <link href="http://makishvili.com/makishvili/2011/02/08/it-is-cold/"/>
+    <link href="http://makishvili.com/2011/02/08/it-is-cold/"/>
     <updated>2011-02-08T10:00:02+02:00</updated>
-    <id>http://makishvili.com/makishvili/2011/02/08/it-is-cold</id>
+    <id>http://makishvili.com/2011/02/08/it-is-cold</id>
     <content type="html"><![CDATA[<p>Эту вещь я написал под впечатлением рассказа Бориса Васильева &ldquo;Холодно, холодно&hellip;&rdquo;.</p>
 
 <!-- more -->
@@ -388,9 +388,9 @@ _</p>
   
   <entry>
     <title type="html"><![CDATA[Год сполна]]></title>
-    <link href="http://makishvili.com/makishvili/2010/12/31/god-spolna/"/>
+    <link href="http://makishvili.com/2010/12/31/god-spolna/"/>
     <updated>2010-12-31T01:04:03+02:00</updated>
-    <id>http://makishvili.com/makishvili/2010/12/31/god-spolna</id>
+    <id>http://makishvili.com/2010/12/31/god-spolna</id>
     <content type="html"><![CDATA[<p>В первых числах января у меня проснулось желание читать. Сколько прочёл, сразу не считал, теперь уж померяться с Болком не смогу. Кажется, что прочёл много :)</p>
 
 <p>В апреле ездил на РИТ 2010. В третий раз читал доклад про свои ошибки и, наконец, остался доволен его звучанием. Недавно монтировал видео с выступления и пересматривал/переслушивал его — снова &ldquo;много про себя понял&rdquo; :)
@@ -416,9 +416,9 @@ _</p>
   
   <entry>
     <title type="html"><![CDATA[Ошибка. Осознание, анализ, извлечение пользы]]></title>
-    <link href="http://makishvili.com/makishvili/2010/12/31/errare/"/>
+    <link href="http://makishvili.com/2010/12/31/errare/"/>
     <updated>2010-12-31T00:59:38+02:00</updated>
-    <id>http://makishvili.com/makishvili/2010/12/31/errare</id>
+    <id>http://makishvili.com/2010/12/31/errare</id>
     <content type="html"><![CDATA[<iframe width="745" height="559" frameborder="0" src="http://video.yandex.ru/iframe/makishvili/z9jb1fdmgq.2608/"></iframe>
 
 
@@ -428,9 +428,9 @@ _</p>
   
   <entry>
     <title type="html"><![CDATA[Филип Сеймур Хоффман]]></title>
-    <link href="http://makishvili.com/makishvili/2010/11/19/filip-sejmur-xoffman/"/>
+    <link href="http://makishvili.com/2010/11/19/filip-sejmur-xoffman/"/>
     <updated>2010-11-19T09:45:36+02:00</updated>
-    <id>http://makishvili.com/makishvili/2010/11/19/filip-sejmur-xoffman</id>
+    <id>http://makishvili.com/2010/11/19/filip-sejmur-xoffman</id>
     <content type="html"><![CDATA[<blockquote><p><strong>Слава постепенно лишает тебя сомнений.</strong> И это самое страшное, что она может с тобой сделать.</p></blockquote>
 
 <p>esquire.ru</p>
@@ -439,9 +439,9 @@ _</p>
   
   <entry>
     <title type="html"><![CDATA[Неуправляемый паддинг внутри Input]]></title>
-    <link href="http://makishvili.com/makishvili/2010/10/25/input-typesubmit-padding-bug-on-safari-mobile/"/>
+    <link href="http://makishvili.com/2010/10/25/input-typesubmit-padding-bug-on-safari-mobile/"/>
     <updated>2010-10-25T10:36:16+03:00</updated>
-    <id>http://makishvili.com/makishvili/2010/10/25/input-typesubmit-padding-bug-on-safari-mobile</id>
+    <id>http://makishvili.com/2010/10/25/input-typesubmit-padding-bug-on-safari-mobile</id>
     <content type="html"><![CDATA[<p>В мобильном Сафари внутри input появляется неуправляемый паддинг слева и справа от текста. <a href="http://stackoverflow.com/questions/3516651/input-typesubmit-padding-bug-on-safari-mobile">Прочитать</a> подробное описание проблемы.</p>
 
 <p>Решение — использовать button вместо input:</p>
@@ -460,9 +460,9 @@ _</p>
   
   <entry>
     <title type="html"><![CDATA[Иначе]]></title>
-    <link href="http://makishvili.com/makishvili/2010/09/15/inache/"/>
+    <link href="http://makishvili.com/2010/09/15/inache/"/>
     <updated>2010-09-15T11:39:18+03:00</updated>
-    <id>http://makishvili.com/makishvili/2010/09/15/inache</id>
+    <id>http://makishvili.com/2010/09/15/inache</id>
     <content type="html"><![CDATA[<p>Группа &ldquo;Бигуди&rdquo;. Название странное, музыка хорошая.</p>
 ]]></content>
   </entry>
